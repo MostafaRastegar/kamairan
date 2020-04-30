@@ -1,0 +1,41 @@
+@import '../../style/sass/variable';
+.main-header {
+  &__top{
+    height:80px;
+    background-color: $color-primary;
+    color: white;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    &-login-register,&-logo,&-education{
+      display: flex;
+      justify-content: flex-end;
+      > * {
+        margin-right: 12px;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 23px;
+      }
+    }
+    &-logo{
+      justify-content: flex-start;
+      > * {
+        margin-right:0;
+      }
+    }
+  }
+  &__bottom {
+    border-bottom: 1px solid $color-grey-220;
+    &-inner {
+      height: 51px;
+      align-items: center;
+      justify-items: center;
+    };
+    .nav-link-logo {
+      margin-left: 15px;
+      display: none;
+    };
+  };
+}
