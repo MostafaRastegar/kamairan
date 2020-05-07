@@ -1,0 +1,23 @@
+@import '../../style/sass/variable';
+.news-card{
+  border: 1px solid #cccccc;
+  border-radius: 15px;
+  height: 240px;
+  width: 100%;
+  max-width: 447px;
+  overflow: hidden;
+  p{
+    text-align: justify;
+  }
+  &__detail{
+    height: 184px;
+    margin-bottom: auto;
+  }
+  &__bottom{
+    border-top: 1px solid #cccccc;
+    &-date{
+      border-right: 1px solid #cccccc;
+      margin-left: auto;
+    }
+  }
+}
