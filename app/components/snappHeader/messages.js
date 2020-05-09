@@ -18,18 +18,6 @@ const messages = {
       slug: 'kit',
       title: 'برنامه نویسی',
     },
-    {
-      slug: 'kit',
-      title: 'برنامه نویسی',
-    },
-    {
-      slug: 'kit',
-      title: 'برنامه نویسی',
-    },
-    {
-      slug: 'kit',
-      title: 'برنامه نویسی',
-    },
   ],
 };
 export default messages;

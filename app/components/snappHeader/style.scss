@@ -1,8 +1,16 @@
 @import '../../style/sass/variable';
 .main-header {
-  &__top{
-    height:80px;
-    background-color: $color-primary;
+  background-color: #333840;
+  color: white;
+  .nav-link{
+    color: white;
+  }
+  .logo{
+    height: 80px;
+  }
+  &__bottom{
+    height:130px;
+    background-color: #333840;
     color: white;
     a{
       color: white;
@@ -26,13 +34,18 @@
       }
     }
   }
-  &__bottom {
-    border-bottom: 1px solid $color-grey-220;
+  &__top {
+    height: 40px;
+    border-bottom: 1px dashed white;
     &-inner {
-      height: 51px;
       align-items: center;
       justify-items: center;
     };
+    &-social {
+      img{
+        width: 24px;
+      }
+    }
     .nav-link-logo {
       margin-left: 15px;
       display: none;

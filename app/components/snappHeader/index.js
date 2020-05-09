@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Container, Row, Col, Navbar, NavbarBrand } from 'reactstrap';
-import BottomMenu from './BottomMenu';
-import SnappAutocomplete from '../snappAutocomplete';
-import messages from './messages';
+import { Container, Navbar, NavbarBrand, Row, Col } from 'reactstrap';
+import HeaderBottomMenu from './HeaderBottomMenu';
+import HeaderTopMenu from './HeaderTopMenu';
+// import SnappAutocomplete from '../snappAutocomplete';
+// import messages from './messages';
 
 import './style.scss';
 
@@ -48,43 +49,19 @@ const Header = () => {
 
   return (
     <header className="main-header">
-      <div className="main-header__top center">
-        <div className="container">
-          <div className="row center">
-            <div className="col-2">
-              <div className="main-header__top-logo">
-                <i className="icon icon-profile" />
-                <span className="rightM10">{messages.headerTop.logo}</span>
-              </div>
-            </div>
-            <div className="col-5">
-              <SnappAutocomplete />
-            </div>
-            <div className="col-3">
-              <div className="main-header__top-education">
-                <i className="icon icon-teacher" />
-                <span>{messages.headerTop.education}</span>
-              </div>
-            </div>
-            <div className="col-2">
-              <div className="main-header__top-login-register">
-                <i className="icon icon-profile" />
-                <Link to="/authentication/">{messages.headerTop.login}</Link>
-                <span>|</span>
-                <Link to="/register/">{messages.headerTop.register}</Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="main-header__bottom">
+      <div className="main-header__top flex center">
         <Container>
-          <Row className="main-header__bottom-inner">
+          <Row className="main-header__top-inner">
             <Col>
-              <BottomMenu />
+              <HeaderTopMenu />
             </Col>
           </Row>
         </Container>
+      </div>
+      <div className="main-header__bottom">
+        <div className="main-header__bottom-inner">
+          <HeaderBottomMenu />
+        </div>
       </div>
     </header>
   );
