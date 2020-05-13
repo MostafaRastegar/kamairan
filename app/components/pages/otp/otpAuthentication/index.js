@@ -8,12 +8,7 @@ function Login() {
   const recipient = useFormInput('');
   const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
   return (
-    <SnappAuthLayout title="ورود | ثبت نام">
-      <div className="padd10 wFull" style={{ textAlign: 'center' }}>
-        <span className="dblock text14 gray1">
-          شماره موبایل خود را وارد و کد تایید را دریافت کنید
-        </span>
-      </div>
+    <SnappAuthLayout title="ورود">
       <div className="loginForm padd20 bottomP30 wFull">
         <AnimateField
           className="col-12"
@@ -24,7 +19,19 @@ function Login() {
           onChange={recipient.onChange}
           label="موبایل"
           onKeyPress={onKeyPress}
-          icon="chilivery-online-pay-help"
+          icon="online-pay-help"
+          iconColor="#A19F2E"
+        />
+        <AnimateField
+          className="col-12"
+          placeholder=" "
+          name="paswword"
+          value={recipient.value}
+          type="text"
+          onChange={recipient.onChange}
+          label="رمز عبور"
+          onKeyPress={onKeyPress}
+          icon="online-pay-help"
           iconColor="#A19F2E"
         />
       </div>

@@ -35,7 +35,7 @@ export function signUpSubmit({ signUpFullname, signUpUserEmail, signUpPass }) {
       className="btn btn-auth btn-success"
       onClick={() => signUpSubmitFunc()}
     >
-      ثبت‌نام دانشجو
+      ثبت‌نام
     </button>
   );
   return {
