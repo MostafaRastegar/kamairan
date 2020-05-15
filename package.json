@@ -12,6 +12,7 @@
   },
   "author": "Mostafa rastegar",
   "license": "MIT",
+  "moduleRoots": [ "app" ],
   "scripts": {
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
