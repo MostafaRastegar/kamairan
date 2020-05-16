@@ -2,13 +2,16 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import sabt from '../../images/sabt.jpg';
 import enamad from '../../images/enamad.jpg';
+import loc from '../../images/location.png';
+import tel from '../../images/tel.png';
+import mail from '../../images/mail.png';
 import './style.scss';
 
 const SnappFooter = () => (
   <footer className="main-footer">
     <div className="footer-section-one flex">
       <Row>
-        <Col className="footer-section-one__about " xl="4">
+        <Col className="footer-section-one__about " xl="5">
           <span className="title hcenter">درباره کاما ایران</span>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -40,7 +43,7 @@ const SnappFooter = () => (
             <li>حساب کاربری</li>
           </ul>
         </Col>
-        <Col className="footer-section-one__namad " xl="4">
+        <Col className="footer-section-one__namad " xl="3">
           <span className="title hcenter">نمادهای اعتماد الکترونیکی</span>
           <div className="left-img flex">
             <img src={sabt} className="left-img__sabt" alt="" />
@@ -49,16 +52,23 @@ const SnappFooter = () => (
         </Col>
       </Row>
     </div>
-    <div className="footer-section-two">
+    <div className="footer-section-two flex-col">
       <div className="address">
+        <img src={loc} alt="" />
         <span>تهران، ستارخان، خیابان کاشانی پور، پاساژ توحید واحد 124</span>
       </div>
-      <div className="tel">
-        <span>02188102030</span>
-        <span>info@kamairan.com</span>
+      <div className="flex">
+        <div className="mail">
+          <span>info@kamairan.com</span>
+          <img src={mail} alt="" />
+        </div>
+        <div className="tel">
+          <span>02188102030</span>
+          <img src={tel} alt="" />
+        </div>
       </div>
     </div>
-    <div className="footer-section-three center">
+    <div className="footer-section-three">
       <span>
         تمامی حقوق این وبسایت متعلق به شرکت دانش آنلاین پارسیان با نام تجاری
         کاما ایران می‌باشد. | 1398 ©

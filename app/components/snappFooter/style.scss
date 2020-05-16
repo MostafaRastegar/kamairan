@@ -1,17 +1,21 @@
 @import '../../style/sass/variable';
-.main-footer {
+  .main-footer {
   width: auto;
   height: 100%;
   background-color: #333840;
+  padding-top:53px;
   color: #fff;
   background-image: url('../../images/footer-back.png');
   background-repeat: no-repeat;
+  padding-right: 44px;
+  background-position: center;
+  height: 100%;
   .footer-section-one {
     ul {
-      padding: 21px 100px 21px 0;
+      margin-top: 23px;
       li {
         font-size: 16px;
-
+        list-style-type:none;
       }
     }
     .title {
@@ -20,7 +24,8 @@
       color: #e67e22;
     }
     p {
-      text-align: right;
+      margin-top: 23px;
+      text-align: justify;
       font-size: 16px;
     }
     .left-img {
@@ -41,9 +46,25 @@
   }
   .footer-section-two{
     font-size:16px;
+    margin-bottom: 12px;
+    img{
+      margin-left: 9px;
+    }
+    .address{
+      margin-bottom: 11px;
+    }
+    .mail{
+      margin-right: 100px;
+    }
+    .tel{
+      margin-right:100px;
+    }
   }
   .footer-section-three {
-    height: 29px;
+    height: 98px;
     font-size: 14px;
+    border-top: 1px dashed;
+    padding-top: 45px;
   }
 }
+
