@@ -6,7 +6,7 @@
     color: white;
   }
   .logo{
-    height: 80px;
+    /*height: 71px;*/
   }
   &__bottom{
     height:130px;
@@ -16,7 +16,7 @@
       color: white;
       text-decoration: none;
     }
-    &-login-register,&-logo,&-education{
+    &-login-register,&-logo{
       display: flex;
       justify-content: flex-end;
       > * {
@@ -32,6 +32,9 @@
       > * {
         margin-right:0;
       }
+    }
+    &-menu{
+      font-size:18px;
     }
   }
   &__top {
@@ -50,5 +53,16 @@
       margin-left: 15px;
       display: none;
     };
+    &-menu{
+      font-size:12px;
+    }
   };
+  .btn-support{
+    border:1px solid #f8efba;
+    font-size: 16px;
+    color:#f8efba;
+  }
+  .btn-danger{
+    background-image: linear-gradient(to top, #e1031c, #ed4054);
+  }
 }
