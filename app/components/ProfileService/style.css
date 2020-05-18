@@ -1,0 +1,45 @@
+
+.Profile{
+
+  font-size: 14px;
+}
+.Profile th{
+  font-family: IRANyekan;
+}
+.Profile td,.Profile th{ text-align: center;}
+.Profile thead{
+  border-radius: 5px;
+  background-color:#ecf0f1;
+
+}
+.Profile td{
+  color: #434343;
+  padding:7px;
+}
+.Profile button{
+  font-size: 10px;
+}
+.Profile thead th{
+border: none ;
+
+}
+.Profile tbody th, .Profile tbody td{
+  border-bottom: 1px solid #dfe4ea;
+  border-top: none;
+}
+td.active{
+  color: #2ecc71 !important ;
+}
+td.unactive{
+  color:#e20a23;
+}
+td.disabled{
+  color:#bdc3c7;
+}
+td.ending{
+  color:#f39c12;
+}
+.Profile .btn-warning{
+  color:#fff;
+  background-color: #f39c12;
+}
