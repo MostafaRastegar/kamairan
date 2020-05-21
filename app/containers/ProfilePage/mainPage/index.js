@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Loading from '../../../components/snappLoading';
-import ProfilePage from '../../../components/pages/profile/main';
+import ProfilePage from '../../../components/pages/profile/profileUser';
 
 const ProfileIndex = () => {
   const [loading] = useState(false);

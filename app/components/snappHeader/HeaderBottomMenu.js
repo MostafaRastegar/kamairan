@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import {
   Nav,
   NavItem,
@@ -9,9 +9,10 @@ import {
   DropdownMenu,
   NavLink,
 } from 'reactstrap';
-import messages from './messages';
+// import messages from './messages';
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
-
+import support from '../../images/support.png';
 const HeaderBottomMenu = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen(!dropdownOpen);
@@ -23,17 +24,36 @@ const HeaderBottomMenu = () => {
             <img className="logo" src={logo} alt="logo" />
           </div>
         </div>
-        <div className="col-5">
-          <div className="leftMauto">
+        <div className="col-6">
+          <div className="main-header__bottom-menu leftMauto">
             <Nav>
-              <NavItem>
-                <NavLink href="#" active>
-                  Link
-                </NavLink>
-              </NavItem>
               <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle nav caret>
-                  Dropdown
+                  مناقصات
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem header>Header</DropdownItem>
+                  <DropdownItem disabled>Action</DropdownItem>
+                  <DropdownItem>Another Action</DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>Another Action</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+              <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle nav caret>
+                  مزایده
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem header>Header</DropdownItem>
+                  <DropdownItem disabled>Action</DropdownItem>
+                  <DropdownItem>Another Action</DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>Another Action</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+              <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle nav caret>
+                  خرید جزئی و متوسط
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem header>Header</DropdownItem>
@@ -44,20 +64,23 @@ const HeaderBottomMenu = () => {
                 </DropdownMenu>
               </Dropdown>
               <NavItem>
-                <NavLink href="#">Link</NavLink>
+                <NavLink href="#">اشتراک کاما</NavLink>
               </NavItem>
             </Nav>
           </div>
         </div>
-        <div className="col-5">
+        <div className="col-4">
           <div className="text-left">
-            <Link className="btn btn-success leftM20" to="/authentication/">
-              <i className="icon icon-teacher" />
-              {messages.headerTop.login}
+            <Link className="btn btn-support leftM20" to="/authentication/">
+              {/* <i className="icon icon-teacher" />
+            //   {messages.headerTop.login}  */}
+              پشتیبانی آنلاین
+              <img src={support} alt="" />
             </Link>
-            <Link className="btn btn-white" to="/authentication/">
-              <i className="icon icon-teacher" />
-              {messages.headerTop.login}
+            <Link className="btn btn-danger" to="/authentication/">
+              ورود / عضویت
+              {/* <i className="icon icon-teacher" />
+            //   {messages.headerTop.login}  */}
             </Link>
           </div>
         </div>

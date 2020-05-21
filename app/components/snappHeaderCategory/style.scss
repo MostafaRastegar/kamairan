@@ -1,0 +1,13 @@
+@import '../../style/sass/variable';
+
+.header-category{
+  border: 2px dashed #fff;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 253px;
+  height: 200px;
+  img{
+    width: 100%;
+    max-width: 88px;
+  }
+}

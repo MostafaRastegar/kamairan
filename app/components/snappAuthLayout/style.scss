@@ -1,26 +1,19 @@
-.auth {
-  &__layout {
-    background: white;
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.08);
-    width: 100%;
-    max-width: 574px;
-    margin: 0 auto;
-    border-radius: 15px;
-    margin-top:65px;
-    margin-bottom:65px;
-    > div{
-      border-radius: 15px;
-    }
-  }
+.kamairan-form h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: IRANyekan;
 }
-
-.header__simple {
-  .icon-bar {
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    position: relative;
-    z-index: 10;
-    margin-bottom: 10px;
-  }
+.kama-theme {
+  border-radius: 10px;
+  border: solid 1px #dfe4ea;
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+.kamairan-form {
+  background-color: #333840;
+  border-radius: 16px;
+  padding: 32px;
+  color: #fff;
 }

@@ -24,17 +24,24 @@ const HeaderTopMenu = () => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div className="flex">
-      <div className="leftMauto">
+    <div className="main-header__top flex">
+      <div className="main-header__top-menu leftMauto">
         <Nav>
-          <NavItem>
-            <NavLink href="#" active>
-              Link
-            </NavLink>
-          </NavItem>
           <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle nav caret>
-              Dropdown
+              شروع کنید
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem disabled>Action</DropdownItem>
+              <DropdownItem>Another Action</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Another Action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+          <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+            <DropdownToggle nav caret>
+              قوانین وب سایت
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem header>Header</DropdownItem>
@@ -45,22 +52,27 @@ const HeaderTopMenu = () => {
             </DropdownMenu>
           </Dropdown>
           <NavItem>
-            <NavLink href="#">Link</NavLink>
+            <NavLink href="#" active>
+              درباره ما
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">تماس با ما</NavLink>
           </NavItem>
         </Nav>
       </div>
       <div className="main-header__top-social rightMauto center">
         <a className="leftM20" href="/" target="_blank">
-          <img src={linkedin} alt="social" />
+          <img src={instagram} alt="social" />
+        </a>
+        <a className="leftM20" href="/" target="_blank">
+          <img src={telegram} alt="social" />
         </a>
         <a className="leftM20" href="/" target="_blank">
           <img src={twitter} alt="social" />
         </a>
         <a className="leftM20" href="/" target="_blank">
-          <img src={instagram} alt="social" />
-        </a>
-        <a href="/" target="_blank">
-          <img src={telegram} alt="social" />
+          <img src={linkedin} alt="social" />
         </a>
       </div>
     </div>
