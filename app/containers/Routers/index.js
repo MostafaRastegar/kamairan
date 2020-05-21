@@ -17,6 +17,7 @@ import Register from '../RegisterPage';
 import Profile from '../ProfilePage/mainPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
+import TenderCart from '../../components/tenderCart';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/register-student" component={RegisterStudent} />
         <Route exact path="/register-teacher" component={RegisterTeacher} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/tender-cart" component={TenderCart} />
         <Route component={Page404} />
       </Switch>
     </SnappLayout>
