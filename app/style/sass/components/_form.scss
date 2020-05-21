@@ -4,11 +4,6 @@
 .form-group {
   position: relative;
   margin-bottom: 18px;
-  label{
-    color: $gray-1;
-    padding-right:20px;
-    margin-bottom: 0;
-  }
 }
 .form-control{
   background-color: transparent;
@@ -16,7 +11,7 @@
   padding-right:20px;
   width:100%;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: solid 1px #cdcdcd;
   background-color: #ffffff;
   color: $gray-1;
@@ -58,64 +53,6 @@
 .snapp-form-flex{
   display: flex;
   align-items: center;
-}
-
-.snapp-animate-field {
-  padding-bottom: 40px;
-  display: flex;
-  flex-flow: column-reverse;
-  position: relative;
-  max-width: 325px;
-  width:100%;
-  margin:0 auto;
-  label {
-    transition: all 0.2s;
-    touch-action: manipulation;
-    font-size: 14px;
-	}
-	input {
-    transition: all 0.2s;
-    touch-action: manipulation;
-    font-size: 15px;
-  }
-  label > span.required-start{
-    color: $color-danger;
-  }
-  input:focus {
-    outline: 0;
-    border-color: $color-border-input !important;
-  }
-  input:placeholder-shown + label {
-    cursor: text;
-    max-width: 66.66%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transform-origin: left bottom;
-		transform: translate3d(0, 160%, 0);
-    font-size: 14px;
-  }
-
-  ::-webkit-input-placeholder,::placeholder {
-    opacity: 0;
-    transition: inherit;
-  }
-  input:focus::-webkit-input-placeholder,input:focus::placeholder {
-    opacity: 1;
-  }
-  input:not(:placeholder-shown) + label,
-  input:focus + label {
-    transform: translate(0, 0) scale(1);
-    padding-right: 0;
-    position: relative;
-    top: -10px;
-    cursor: pointer;
-  }
-  .snapp-password__show{
-    position: absolute;
-    top: 40px;
-    left: 25px;
-  }
 }
 
 %radio-basic {

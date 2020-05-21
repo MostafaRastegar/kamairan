@@ -13,13 +13,19 @@ const AnimateField = props => {
   const classes = props;
   return (
     <div
-      className={`snapp-animate-field form-group ${
-        classes.className ? classes.className : ''
-      }${!classes.validation ? '' : ' panigale__border_red'}`}
+      className={`form-group ${classes.className ? classes.className : ''}${
+        !classes.validation ? '' : ' panigale__border_red'
+      }
+      ${classes.icon ? ' form-group__icon' : ''}
+      `}
     >
       {classes.validation && (
         <div className="snapp-form-validation">{classes.validation[0]}</div>
       )}
+      <label htmlFor={classes.name}>
+        {classes.label}{' '}
+        {!!classes.required && <span className="required-start">*</span>}
+      </label>
       <input
         {...props}
         className="form-control"
@@ -33,17 +39,8 @@ const AnimateField = props => {
         placeholder={classes.placeholder}
         disabled={classes.disabled}
       />
-      <label htmlFor={classes.name}>
-        {classes.label}{' '}
-        {!!classes.required && <span className="required-start">*</span>}
-      </label>
       {!!classes.icon && (
-        <i
-          className={`snapp-icon ${classes.icon}`}
-          style={{
-            color: classes.iconcolor ? classes.iconcolor : '#929292',
-          }}
-        />
+        <img className="snapp-icon" src={classes.icon} alt={classes.name} />
       )}
     </div>
   );
@@ -55,8 +52,16 @@ const AnimateFieldSheba = props => {
     <div
       className={`snapp-animate-field form-group ${
         classes.className ? classes.className : ''
-      }${!classes.validation ? '' : ' panigale__border_red'}`}
+      }${!classes.validation ? '' : ' panigale__border_red'}${
+        classes.icon ? ' form-group__icon' : ''
+      }
+      `}
     >
+      <label htmlFor={classes.name}>
+        {classes.label}{' '}
+        {!!classes.required && <span className="required-start">*</span>}
+      </label>
+      ;
       {classes.validation && (
         <div className="snapp-form-validation">{classes.validation[0]}</div>
       )}
@@ -73,17 +78,8 @@ const AnimateFieldSheba = props => {
         placeholder={classes.placeholder}
         disabled={classes.disabled}
       />
-      <label htmlFor={classes.name}>
-        {classes.label}{' '}
-        {!!classes.required && <span className="required-start">*</span>}
-      </label>
       {!!classes.icon && (
-        <i
-          className={`snapp-icon ${classes.icon}`}
-          style={{
-            color: classes.iconcolor ? classes.iconcolor : '#929292',
-          }}
-        />
+        <img className="snapp-icon" src={classes.icon} alt={classes.name} />
       )}
     </div>
   );
@@ -171,13 +167,17 @@ class AnimateFieldPassword extends React.Component {
     const { type } = this.state;
     return (
       <div
-        className={`snapp-animate-field form-group ${
-          classes.className ? classes.className : ''
-        }${!classes.validation ? '' : ' panigale__border_red'}`}
+        className={`form-group ${classes.className ? classes.className : ''}${
+          !classes.validation ? '' : ' panigale__border_red'
+        }`}
       >
         {classes.validation && (
           <div className="snapp-form-validation">{classes.validation[0]}</div>
         )}
+        <label htmlFor={classes.name}>
+          {classes.label}{' '}
+          {!!classes.required && <span className="required-start">*</span>}
+        </label>
         <input
           className="form-control"
           type={type}
@@ -188,13 +188,12 @@ class AnimateFieldPassword extends React.Component {
           onKeyPress={classes.onKeyPress}
           placeholder={classes.placeholder}
         />
-        <label htmlFor={classes.name}>
-          {classes.label}{' '}
-          {!!classes.required && <span className="required-start">*</span>}
-        </label>
         <span className="snapp-password__show" onClick={this.showHide}>
           {type === 'input' ? 'مخفی' : 'نمایش'}
         </span>
+        {!!classes.icon && (
+          <img className="snapp-icon" src={classes.icon} alt={classes.name} />
+        )}
       </div>
     );
   }

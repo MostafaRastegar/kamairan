@@ -1,37 +1,48 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import Link from 'react-router-dom';
-// import { loginSubmit, useFormInput } from './util';
+import { Form } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { loginSubmit, useFormInput } from './util';
 import SnappAuthLayout from '../../../snappAuthLayout';
+import { AnimateField } from '../../../snappForm';
+
+import numberIcon from '../../../../images/number.png';
+import passwordIcon from '../../../../images/password.png';
 
 import './style.scss';
-function Login() {
-  // const recipient = useFormInput('');
-  // const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
+const OtpAuthentication = () => {
+  const recipient = useFormInput('');
+  const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
+  console.log('login');
   return (
     <SnappAuthLayout title="ورود">
       <div className="login-form">
         <Form>
-          <FormGroup>
-            <Label for="username">شماره تلفن همراه</Label>
-            <Input
-              type="tel"
-              name="number"
-              className="username"
-              placeholder="09*********"
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="loginpassword">رمزعبور</Label>
-            <Input
-              type="epassword"
-              name="password"
-              className="loginPassword"
-              placeholder="*********"
-            />
-          </FormGroup>
+          <AnimateField
+            className="col-12 username"
+            placeholder=" "
+            name="recipient"
+            value={recipient.value}
+            type="tel"
+            onChange={recipient.onChange}
+            label="موبایل"
+            onKeyPress={onKeyPress}
+            icon={numberIcon}
+          />
+          <AnimateField
+            className="col-12"
+            placeholder=" "
+            name="password"
+            value={recipient.value}
+            type="text"
+            onChange={recipient.onChange}
+            label="رمز عبور"
+            onKeyPress={onKeyPress}
+            icon={passwordIcon}
+          />
 
-          <Button color="success">ورود</Button>
+          <div className="">
+            <SubmitComp />
+          </div>
         </Form>
         <div className="form-bottom flex-col">
           <span>
@@ -45,6 +56,6 @@ function Login() {
       </div>
     </SnappAuthLayout>
   );
-}
+};
 
-export default Login;
+export default OtpAuthentication;
