@@ -1,35 +1,47 @@
 import React from 'react';
-import { AnimateField } from '../../../snappForm';
-import { loginSubmit, useFormInput } from './util';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import Link from 'react-router-dom';
+// import { loginSubmit, useFormInput } from './util';
 import SnappAuthLayout from '../../../snappAuthLayout';
 
 import './style.scss';
 function Login() {
-  const recipient = useFormInput('');
-  const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
+  // const recipient = useFormInput('');
+  // const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
   return (
-    <SnappAuthLayout title="ورود | ثبت نام">
-      <div className="padd10 wFull" style={{ textAlign: 'center' }}>
-        <span className="dblock text14 gray1">
-          شماره موبایل خود را وارد و کد تایید را دریافت کنید
-        </span>
-      </div>
-      <div className="loginForm padd20 bottomP30 wFull">
-        <AnimateField
-          className="col-12"
-          placeholder=" "
-          name="recipient"
-          value={recipient.value}
-          type="tel"
-          onChange={recipient.onChange}
-          label="موبایل"
-          onKeyPress={onKeyPress}
-          icon="chilivery-online-pay-help"
-          iconColor="#A19F2E"
-        />
-      </div>
-      <div className="wFull hP20 center bottomM20 otp-auth__enter bottomP40">
-        <SubmitComp />
+    <SnappAuthLayout title="ورود">
+      <div className="login-form">
+        <Form>
+          <FormGroup>
+            <Label for="username">شماره تلفن همراه</Label>
+            <Input
+              type="tel"
+              name="number"
+              className="username"
+              placeholder="09*********"
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="loginpassword">رمزعبور</Label>
+            <Input
+              type="epassword"
+              name="password"
+              className="loginPassword"
+              placeholder="*********"
+            />
+          </FormGroup>
+
+          <Button color="success">ورود</Button>
+        </Form>
+        <div className="form-bottom flex-col">
+          <span>
+            حساب کاربری ندارید؟{' '}
+            <Link to="/" className="orange">
+              ثبت نام کنید
+            </Link>
+          </span>
+          <span>رمز خود را فراموش کرده اید؟</span>
+        </div>
       </div>
     </SnappAuthLayout>
   );
