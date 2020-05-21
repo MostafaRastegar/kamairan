@@ -1,7 +1,7 @@
-import React, { Children } from 'react';
-import './style.css';
+import React from 'react';
+import './style.scss';
 import { Button, Row, Col } from 'reactstrap';
-import SidebarMenu from '../SidebarMenu';
+import SidebarMenu from '../profileSidebarMenu';
 const Profilethem = props => {
   const { title, children, txt } = props;
   return (
