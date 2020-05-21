@@ -12,6 +12,11 @@ import $ from 'jquery';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 
 import { AnimateField, AnimateFieldSheba, CheckBox } from '../../snappForm';
+import AboutCard from '../../snappAboutCard';
+import NewsCard from '../../snappNewsCard';
+import SearchBox from '../../snappSearchBox';
+import HeaderCategory from '../../snappHeaderCategory';
+import catContent from '../../../images/icons/category-content.png';
 import Icon from './icon';
 import ChiliAlert from '../../snappAlert';
 import './style.scss';
@@ -89,6 +94,22 @@ export class Kit extends React.Component {
       <div className="container bg-white">
         <div className="row topP15">
           <hr />
+          <div className="col-lg-12 mt-3 mb-3">
+            <div className="row">
+              <div className="col-3">
+                <HeaderCategory title="محتوای ویژه" src={catContent} link="/" />
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-12 mt-3 mb-3">
+            <SearchBox />
+          </div>
+          <div className="col-lg-12 mt-3 mb-3">
+            <AboutCard />
+          </div>
+          <div className="col-lg-12 mt-3 mb-3">
+            <NewsCard />
+          </div>
           <div className="col-lg-12">
             <div className="ltr-plugin">
               <div id="demo" className="owl-carousel owl-theme">

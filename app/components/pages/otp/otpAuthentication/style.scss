@@ -1,0 +1,30 @@
+.login-form .username {
+  padding-left: 33px;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-align: left;
+}
+.login-form .loginPassword {
+  text-align: left;
+  padding-left: 36px;
+  background-repeat: no-repeat;
+  background-position: 5px;
+  background-color: #dfe4ea;
+}
+.login-form {
+  text-align: right;
+  font-size: 14px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.form-bottom {
+  text-align: center;
+}
+.form-bottom a {
+  color: #fff;
+}
+.form-bottom .orange {
+  color: #e67e22;
+}
