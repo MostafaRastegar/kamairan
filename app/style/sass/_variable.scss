@@ -1,101 +1,76 @@
-$color-primary: #282337;
-$color-header: #191923;
-$color-success: #1ed760;
-$color-secondary: #1ed764;
-$colorSecondary: #1ed760;
+$purple-1: #cd84f1;
+$purple-2: #c56cf0;
+$purple-3: #9b59b6;
+$purple-4: #8e44ad;
+
+$pink-1: #ffcccc;
+$pink-2: #ffb8b8;
+
+$red-1: #ff4d4d;
+$red-2: #ff3838;
+$red-3: #e74c3c;
+$red-4: #c0392b;
+$red-4: #e1031c;
+
+
+$yellow-1: #fffa65;
+$yellow-2: #fff200;
+$yellow-3: #ffaf40;
+$yellow-4: #ff9f1a;
+$yellow-5: #f1c40f;
+$yellow-6: #f39c12;
+$yellow-7: #e67e22;
+$yellow-8: #d35400;
+
+
+$green-1: #32ff7e;
+$green-2: #3ae374;
+$green-3: #2ecc71;
+$green-4: #27ae60;
+
+$blue-1: #7efff5;
+$blue-2: #67e6dc;
+$blue-3: #18dcff;
+$blue-4: #17c0eb;
+$blue-5: #7d5fff;
+$blue-6: #7158e2;
+$blue-7: #3498db;
+$blue-8: #2980b9;
+
+$gray-1: #ecf0f1;
+$gray-2: #bdc3c7;
+$gray-3: #7f8c8d;
+$gray-4: #95a5a6;
+$gray-5: #2c3e50;
+$gray-6: #34495e;
+$gray-7: #4b4b4b;
+$gray-8: #3d3d3d;
+
+// set variable
+$color-primary: $gray-7;
+$color-success: $green-4;
+$color-secondary: $red-4;
+
 $color-tag: #21974E;
 $color-toggle: #4ad964;
-$color-danger: #ff0018;
-$color-warning: $color-secondary;
-$color-info: #007aff;
+
+$color-danger: $red-4;
+$color-warning: $yellow-4;
+$color-info: $blue-8;
 $color-black: #000000;
 $color-white: #fff;
-$color-disable: #e4e4e4;
-$color-light: #f5f5f5;
-$color-yellow: #ffc800;
-$color-org:#414367;
-$color-highlight: #9fa02b;
+$color-disable: $gray-2;
 
 $color-green:$color-success;
 $color-red: $color-danger;
 $color-blue: $color-info;
+$color-yellow: $yellow-4;
 
-$color-grey-120: #fafafa;
-$color-grey-160: #f5f5f5;
-$color-grey-220: #dcdcdc;
-$color-grey-240: #f0f0f0;
-
-
-$grey-1: #787878;
-$grey-2: #f5f5f5;
-$grey-3: #eeeeee;
-$grey-4: #D9D9D9;
-$grey-5: #bdbdbd;
-$grey-6: #929292;
-$grey-7: #818181;
-$grey-8: #616161;
-$grey-9: #424242;
-$grey-10: #212121;
-$grey-11: #efefef;
-$grey-12: #d6d6d6;
-$grey-13: #eaeaea;
-$grey-14: #c8c8c8;
-$grey-15: #444444;
-
-$red-1: #ffebee;
-$red-2: #ffcdd2;
-$red-3: #ef9a9a;
-$red-4: #e57373;
-$red-5: #ef5350;
-$red-6: #f44336;
-$red-7: #e53935;
-$red-8: #d32f2f;
-$red-9: #c62828;
-$red-10: #b71c1c;
-$red-11: #E41D36;
-$red-12: #F43939;
-
-$purple-5: #b35bc3;
-
-$green-1: #9FA02B;
-
-$orange-1: #fff3e0;
-$orange-2: #ffe0b2;
-$orange-3: #ffcc80;
-$orange-4: #ffb74d;
-$orange-5: #ffa726;
-$orange-6: #ff9800;
-$orange-7: #fb8c00;
-$orange-8: #f57c00;
-$orange-9: #ef6c00;
-$orange-10: #e65100;
-$orange-11 : #FCB24A;
-$orange-12: #F89F41;
-$orange-13: #F1613A;
-$orange-14: #F2B93F;
-
-
-$rainbow-list : #C30029 17%,
-#009855 17% 34%,
-#A19E3E 34% 51%,
-#FF9A50 51% 68%,
-#F95743 68% 85%,
-#FF0021 85%;
-
-// Rate colors
-$color_rate-1: #e66230;
-$color-rate-2: #e69717;
-$color-rate-3: #cec20c;
-$color-rate-4: #97c21e;
-$color-rate-5: #4fc238;
-
-
-$color-border-input:#b9b9b9;
-$color-border-2: #d9d9d9;
+$color-border-input:$gray-3;
+$color-border-2: $gray-4;
 
 $color-text-black: $color-black;
 $color-text-input: $color-primary;
-$color-text-icon: #929292;
 
 $font-family-iranyekan: iranyekan;
 
@@ -110,11 +85,3 @@ $--breakpoint-xxl: 1366px;
 
 $--font-family-sans-serif: $font-family-iranyekan;
 $--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-
-$border-radius : 42.5px !important;
-
-
-$vipActive: $color-secondary;
-$vipSelected: $color-tag;
-$vipReserve: $grey-5;
