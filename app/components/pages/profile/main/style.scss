@@ -40,7 +40,7 @@
             }
 
             .profile-line{
-                border-top: 1px solid $grey-4;
+                border-top: 1px solid $gray-4;
                 padding: 12px 10px;
                 display: flex;
                 .profile-count{
@@ -48,7 +48,7 @@
                         display: inline-block;
                     }
                     &__cash{
-                        color:$grey-6;
+                        color:$gray-6;
                     }
                 }
                 .profile-gain{
@@ -111,7 +111,7 @@
             margin-bottom: 36px;
             .profile-address__adtitle{
 
-                color: $grey-6;
+                color: $gray-6;
                 font-size: 14px;
                 font-weight: 150;
                 line-height: 44px;
@@ -127,7 +127,7 @@
                 display: flex;
                 text-align: right;
                 position: relative;
-                border-top: 1px solid $grey-12;
+                border-top: 1px solid $gray-8;
                 padding: 18px 0;
                 .list-text__left{
                     margin-right: auto;
@@ -144,4 +144,3 @@
         }
     }
 }
-

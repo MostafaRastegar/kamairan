@@ -1,17 +1,17 @@
 @import '../../../style/sass/variable';
 .accordion__title{
   border: 1px solid #fff;
-  background:$color-grey-220;
+  background:$gray-8;
   border-radius:10px 10px 0 0;
   padding:15px 10px;
   font-weight: normal;
   &:hover{
-    background:$color-grey-220;
+    background:$gray-8;
     outline: none;
   }
   .icon{
     font-family: 'icomoon' !important;
-    color:$grey-1;
+    color:$gray-1;
     &:before{
       content:"\E90C";
     }

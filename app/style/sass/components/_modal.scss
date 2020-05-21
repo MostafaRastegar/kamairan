@@ -3,7 +3,7 @@
   &.fade .modal-dialog {
     transform: translate3d(0, 100vh, 0);
   }
-  
+
   &.show .modal-dialog {
     transform: translate3d(0, 0, 0);
 	}
@@ -59,7 +59,7 @@
   .modal-header{
     border-bottom: 0;
     border-radius: 0;
-    background-color: $grey-13;
+    background-color: $gray-8;
     .icon{
       line-height: 0;
       position: absolute;
@@ -96,7 +96,7 @@
     max-width: 320px;
     border-radius: 20px;
     overflow: hidden;
-    
+
     &:after,&:before{
       display: none;
     }
@@ -104,7 +104,7 @@
       height: 50px;
       background: $color-primary;
       &-item:first-child{
-        border-left: 1px solid $grey-8;
+        border-left: 1px solid $gray-8;
       }
     }
     .modal-content{
