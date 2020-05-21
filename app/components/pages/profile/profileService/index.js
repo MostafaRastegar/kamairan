@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import { Table, Button } from 'reactstrap';
-const ProfileService = props => (
+const ProfileService = () => (
   // const { src, title, desc, rate, time } = props.data
   <Table responsive className="Profile">
     <thead>

@@ -1,20 +1,17 @@
-import './style.css';
-import bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import './style.scss';
 import React from 'react';
 import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
-import dashboard from '../../images/dashboard.png';
-import user from '../../images/user.png';
-import service from '../../images/service.png';
-import setting from '../../images/setting.png';
-import pay from '../../images/pay.png';
-import shraj from '../../images/sharj.png';
-import support from '../../images/suport.png';
-import pass from '../../images/pass.png';
-import exit from '../../images/exit.png';
-const SidebarMenu = props => (
-  // const { notif } = props;
-  (
-    <Navbar color="faded">
+import dashboard from '../../../../images/dashboard.png';
+import user from '../../../../images/user.png';
+import service from '../../../../images/service.png';
+import setting from '../../../../images/setting.png';
+import pay from '../../../../images/pay.png';
+import shraj from '../../../../images/sharj.png';
+import support from '../../../../images/suport.png';
+import pass from '../../../../images/pass.png';
+import exit from '../../../../images/exit.png';
+const SidebarMenu = () => (
+  <Navbar color="faded">
     <Nav navbar>
       <NavItem className="flex">
         <NavLink href="#">
