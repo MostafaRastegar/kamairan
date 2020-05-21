@@ -7,7 +7,7 @@ import './style.scss';
 
 const TenderCart = () => (
   <div className="tender-cart">
-    <div className="cart-box1">
+    <div className="cart-box topM20 bottomM20">
       <div className="cart-detail">
         <div className="flex">
           <div className="pic-avatar hCenter">
