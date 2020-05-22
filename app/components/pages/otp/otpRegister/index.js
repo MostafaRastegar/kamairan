@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-// import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { signUpSubmit, useFormInput } from './util';
 import { AnimateField } from '../../../snappForm';
-// import { otpPermission } from '../util';
 import SnappAuthLayout from '../../../snappAuthLayout';
-
-// import 'react-accessible-accordion/dist/fancy-example.css';
+import numberIcon from '../../../../images/number.png';
+import passwordIcon from '../../../../images/password.png';
+import nameIcon from '../../../../images/name.png';
 import './style.scss';
 
 const OtpRegister = ({
@@ -42,55 +42,51 @@ const OtpRegister = ({
     <SnappAuthLayout title="ثبت‌نام">
       <div className="registerForm bottomP30 wFull">
         <AnimateField
-          className="col-12"
-          placeholder=" "
+          className="name"
+          placeholder="علیرضا باقری "
           name="signUpFullname"
           value={signUpFullname.value}
           type="text"
           onChange={signUpFullname.onChange}
           onKeyPress={onKeyPress}
           label="نام و نام خانوادگی"
-          icon="chilivery-user"
+          icon={nameIcon}
           required
         />
         <AnimateField
-          className="col-12"
-          placeholder=" "
+          className="tel"
+          placeholder="09*********"
           name="signUpPhone"
-          value="09358537536"
+          value=""
           type="text"
           label="شماره موبایل"
-          icon="chilivery-online-pay-help"
+          icon={numberIcon}
           disabled
         />
 
         <AnimateField
-          className="col-12"
-          placeholder=" "
+          className="pass"
+          placeholder="*********"
           name="signUpPass"
           onChange={signUpPass.onChange}
           value={signUpPass.value}
           type="password"
           label="رمزعبور"
           onKeyPress={onKeyPress}
+          icon={passwordIcon}
         />
-
-        <div className="text-center">
-          <span className="ruleAndCondition midText">
-            با کلیک بر روی دکمه ثبت نام شما
-            <span className="ruleAndCondition__link">
-              <span className="accordion__list-text">
-                {'\u00A0'}
-                قوانین سایت
-                {'\u00A0'}
-              </span>
-            </span>
-            را پذیرفته اید
-          </span>
-        </div>
       </div>
-      <div className="topM20 wFull hP20 center bottomM20">
+      <div>
         <SubmitComp />
+      </div>
+      <div className="form-bottom flex rCol">
+        <span>
+          حساب کاربری دارید؟{' '}
+          <Link to="/" className="orange">
+            وارد شوید
+          </Link>
+        </span>
+        <span>رمز خود را فراموش کرده اید؟</span>
       </div>
     </SnappAuthLayout>
   );

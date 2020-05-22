@@ -10,10 +10,29 @@
   background-color: #ffffff;
   padding: 30px;
   text-align: center;
+  .kamairan-imgform img{
+    width:600px;
+  }
+}
+.snapp-icon{
+  position: absolute;
+  bottom: 13px;
+  left: 12px;
 }
 .kamairan-form {
   background-color: #333840;
   border-radius: 16px;
   padding: 32px;
   color: #fff;
+}
+.form-bottom {
+  text-align: center;
+  margin-top:28px;
+
+.a {
+  color: #fff;
+}
+ .orange {
+  color: #e67e22;
+}
 }

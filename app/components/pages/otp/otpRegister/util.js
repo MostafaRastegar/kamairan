@@ -31,6 +31,7 @@ export function signUpSubmit({ signUpFullname, signUpUserEmail, signUpPass }) {
 
   const SubmitComp = () => (
     <button
+      style={{ width: '100%' }}
       type="button"
       className="btn btn-auth btn-success"
       onClick={() => signUpSubmitFunc()}

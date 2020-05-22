@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { Container, Row } from 'reactstrap';
 import Countdown from 'react-countdown';
 import OtpInput from 'react-otp-input';
@@ -9,6 +9,8 @@ import { getUserOtpVerify } from '../../../../actions/otp';
 import { AnimateField } from '../../../snappForm';
 import SnappAuthLayout from '../../../snappAuthLayout';
 import { otpMainVerify } from './util';
+import numberIcon from '../../../../images/number.png';
+
 // import { otpPermission } from '../util';
 import './style.scss';
 
@@ -65,7 +67,7 @@ function VerifyCode(
   );
 
   return (
-    <SnappAuthLayout title="تایید شماره موبایل">
+    <SnappAuthLayout title="تایید ثبت نام">
       <div className="activationCode__edit__wrapper topM10 wFull">
         <AnimateField
           className="col-12"
@@ -73,14 +75,11 @@ function VerifyCode(
           name="signUpPhone"
           value="09358537536"
           type="text"
-          label="شماره موبایل"
-          icon="chilivery-online-pay-help"
-          disabled
+          label="شماره تلفن همراه"
+          icon={numberIcon}
         />
       </div>
-      <h4 className="text12 text-center gray1">
-        کدی را که پیامک می‌شود، در قسمت زیر وارد کنید:
-      </h4>
+      <h4 className="text12 text-center gray1">کد تایید دریافتی</h4>
       <div className="activationCode__form">
         <div className="center padd15 col-12 ltr gray1">
           <OtpInput
@@ -110,9 +109,16 @@ function VerifyCode(
             // separator={<span>-</span>}
           />
         </div>
-
-        <p className="midText mt-5 gray1">زمان باقیمانده ارسال پیامک</p>
-        <Countdown date={date} renderer={renderer} key={keyss} />
+        <div className="flex">
+          <div>
+            <Link to="/" className="color-white">
+              درخواست ارسال مجدد کد
+            </Link>
+          </div>
+          <div className="timer">
+            <Countdown date={date} renderer={renderer} key={keyss} />
+          </div>
+        </div>
       </div>
     </SnappAuthLayout>
   );
