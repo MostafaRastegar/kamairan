@@ -35,43 +35,50 @@ const Header = () => {
       {location === '/' && (
         <div className="main-header__bottom-home">
           <Container>
-            <div className="col-lg-12 mt-3 mb-3">
-              <div className="padd15 bg-white border-radius-10">
-                <SearchBox />
-              </div>
-            </div>
-            <div className="col-lg-12 mt-3 pb-3">
-              <div className="row">
-                <div className="col-3">
-                  <HeaderCategory
-                    title="محتوای ویژه"
-                    src={catContent}
-                    link="/"
-                  />
+            <Row>
+              <div className="col-lg-12 mt-3 mb-3">
+                <div className="searchBox-title text18 bottomM15">
+                  <span className="leftP5">در بین</span>
+                  <span className="leftP5 color-green">11000000</span>
+                  <span>معاملات سایت جستجو کنید!</span>
                 </div>
-                <div className="col-3">
-                  <HeaderCategory
-                    title="محتوای ویژه"
-                    src={catContent}
-                    link="/"
-                  />
-                </div>
-                <div className="col-3">
-                  <HeaderCategory
-                    title="محتوای ویژه"
-                    src={catContent}
-                    link="/"
-                  />
-                </div>
-                <div className="col-3">
-                  <HeaderCategory
-                    title="محتوای ویژه"
-                    src={catContent}
-                    link="/"
-                  />
+                <div className="padd15 leftP30 rightP30 bg-white border-radius-10">
+                  <SearchBox />
                 </div>
               </div>
-            </div>
+              <div className="col-lg-12 mt-3 pb-3">
+                <div className="row">
+                  <div className="col-3">
+                    <HeaderCategory
+                      title="محتوای ویژه"
+                      src={catContent}
+                      link="/"
+                    />
+                  </div>
+                  <div className="col-3">
+                    <HeaderCategory
+                      title="محتوای ویژه"
+                      src={catContent}
+                      link="/"
+                    />
+                  </div>
+                  <div className="col-3">
+                    <HeaderCategory
+                      title="محتوای ویژه"
+                      src={catContent}
+                      link="/"
+                    />
+                  </div>
+                  <div className="col-3">
+                    <HeaderCategory
+                      title="محتوای ویژه"
+                      src={catContent}
+                      link="/"
+                    />
+                  </div>
+                </div>
+              </div>
+            </Row>
           </Container>
         </div>
       )}

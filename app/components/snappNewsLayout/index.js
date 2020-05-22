@@ -5,11 +5,13 @@ import NewsCard from '../snappNewsCard';
 
 // import styled from 'styled-components';
 const SnappNewsLayout = () => (
-  <div className="salam">
+  <div className="">
     <div className="center topM30 bottomM30 flex">
-      <span className="color-secondary bold text14 leftMauto">
-        <h3>آخرین مطالب سایت</h3>
-        <p>قراره کلی فایل آموزشی اینجا ارائه بدیم</p>
+      <span className="color-secondary leftMauto">
+        <h3 className="text24 bold gray7">آخرین مطالب سایت</h3>
+        <p className="text16 bold-500 gray-7">
+          قراره کلی فایل آموزشی اینجا ارائه بدیم
+        </p>
       </span>
       <Link to="/" className="btn btn-info">
         وبلاگ کاما ایران
@@ -23,9 +25,9 @@ const SnappNewsLayout = () => (
         <NewsCard />
       </div>
     </div>
-    <div className="center topM15">
+    <div className="center topM50 bottomM50">
       <a className="btn btn-success center" href="/">
-        salam
+        مشاهده مطالب بیشتر
       </a>
     </div>
   </div>

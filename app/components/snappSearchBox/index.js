@@ -11,7 +11,7 @@ const SearchBox = () => (
   <section className="search-sec">
     <form className="center" noValidate="novalidate">
       <div className="search-sec__slt">
-        <select className="form-control" id="exampleFormControlSelect1">
+        <select className="form-control gray3" id="exampleFormControlSelect1">
           <option>نوع معاملات</option>
           <option>Example one</option>
           <option>Example one</option>
@@ -22,7 +22,7 @@ const SearchBox = () => (
         </select>
       </div>
       <div className="p-0 search-sec__slt">
-        <select className="form-control" id="exampleFormControlSelect1">
+        <select className="form-control gray3" id="exampleFormControlSelect1">
           <option>انتخاب دسته بندی</option>
           <option>Example one</option>
           <option>Example one</option>
@@ -35,7 +35,7 @@ const SearchBox = () => (
       <div className="search-sec__input">
         <input
           type="text"
-          className="form-control"
+          className="form-control gray3"
           placeholder="دنبال چی میگردی؟"
         />
       </div>
