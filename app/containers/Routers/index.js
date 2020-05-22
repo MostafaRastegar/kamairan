@@ -13,6 +13,11 @@ import AuthenticationPage from '../AuthenticationPage';
 import VerifyCode from '../VerifyCodePage';
 import Register from '../RegisterPage';
 import Profile from '../ProfilePage/mainPage';
+import ProfileService from '../ProfilePage/servicePage';
+import ProfilechPass from '../ProfilePage/changePassPage';
+import ProfileExtention from '../ProfilePage/extentionPage';
+import ProfileCharge from '../ProfilePage/chargePage';
+import ProfileSetting from '../ProfilePage/settingPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
 
@@ -27,6 +32,12 @@ function App() {
         <Route exact path="/verify-code" component={VerifyCode} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/profile-service" component={ProfileService} />
+        <Route exact path="/profile-password" component={ProfilechPass} />
+        <Route exact path="/profile-extention" component={ProfileExtention} />
+        <Route exact path="/profile-charge" component={ProfileCharge} />
+        <Route exact path="/profile-setting" component={ProfileSetting} />
+
         <Route component={Page404} />
       </Switch>
     </SnappLayout>

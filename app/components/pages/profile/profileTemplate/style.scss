@@ -1,23 +1,23 @@
-.profile-theme h1{
-   font-size: 20px;
-  font-weight: bold;
-   text-align: right;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-family: IRANyekan;
-}
-.profile-theme-button{display:none; margin-right: auto;font-size: 16px;}
-.profile-theme{
-  border-radius: 10px;
-  border: solid 1px #dfe4ea;
-  background-color: #ffffff;
-  padding:30px;
-}
-.theme-top{
-  margin-bottom: 25px;
-}
-.ProfileSidebar{
-  border-radius: 10px;
-  border: solid 2px #dfe4ea;
-  background-color: #fff;
+.mainProfile{
+  margin-top: 32px;
+  .profile-theme h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: IRANyekan;
+  }
+  .profile-theme-button{display:none; margin-right: auto;font-size: 16px;}
+  .profile-theme{
+    border-radius: 10px;
+    border: solid 1px #dfe4ea;
+    background-color: #ffffff;
+    padding:30px 30px 0px 30px;
+  }
+  .ProfileSidebar{
+    border-radius: 10px;
+    border: solid 2px #dfe4ea;
+    background-color: #fff;
+  }
 }

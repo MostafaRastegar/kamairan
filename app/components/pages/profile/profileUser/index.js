@@ -1,38 +1,39 @@
 import React from 'react';
 import './style.scss';
-import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
+import { Button, Form, Row, Col } from 'reactstrap';
+import { AnimateField } from '../../../snappForm';
 import imgprofile from '../../../../images/img-user.png';
+import nameIcon from '../../../../images/name.png';
+import mailIcon from '../../../../images/email.png';
+import numberIcon from '../../../../images/number.png';
 const ProfileUser = () => (
   <Row>
     <Col xl="6" className="Profile-User" style={{ textAlign: 'right' }}>
       <Form>
-        <FormGroup>
-          <Label for="examplename">نام و نام خانوادگی</Label>
-          <Input
-            type="text"
-            name="name"
-            className="profile-name"
-            placeholder="علیرضا باقری"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleNumber">شماره تلفن همراه</Label>
-          <Input
-            type="tel"
-            name="number"
-            className="profile-Number"
-            placeholder="09124578523"
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleEmail">ایمیل</Label>
-          <Input
-            type="email"
-            name="email"
-            className="profile-Email"
-            placeholder="name@domain.com"
-          />
-        </FormGroup>
+        <AnimateField
+          className="profile-name"
+          placeholder="علیرضا باقری"
+          name="name"
+          type="text"
+          label="نام و نام خانوادگی"
+          icon={nameIcon}
+        />
+        <AnimateField
+          className="profile-Number"
+          placeholder="09124578523"
+          name="telnumber"
+          type="tel"
+          label="شماره تلفن همراه"
+          icon={numberIcon}
+        />
+        <AnimateField
+          className="profile-Email"
+          placeholder="name@domain.com"
+          name="email"
+          type="email"
+          label="ایمیل"
+          icon={mailIcon}
+        />
         <Button color="success">ویرایش اطلاعات</Button>
       </Form>
     </Col>

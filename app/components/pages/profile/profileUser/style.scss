@@ -1,26 +1,17 @@
-.profile-name{
+
+.profile-name,.profile-Email,.profile-Number{
   padding-left:30px;
-  // background-image: url("../../images/name.png");
   background-repeat: no-repeat;
   background-position: 5px;
 }
 .profile-Number{
   text-align: left;
-  padding-left:36px;
-  // background-image: url("../../images/number.png");
-  background-repeat: no-repeat;
-  background-position: 5px;
-  background-color: #dfe4ea;
+
 }
 .profile-Email{
   text-align: left;
-  padding-left:36px;
-  // background-image: url("../../images/email.png");
-  background-repeat: no-repeat;
-  background-position: 5px;
-
 }
-.profile-img{
-  width: 500px;
-  height: 433px;
+.profile-img img{
+  width: 100%;
+  height: auto;
 }
