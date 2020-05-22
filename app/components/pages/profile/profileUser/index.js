@@ -8,7 +8,7 @@ import mailIcon from '../../../../images/email.png';
 import numberIcon from '../../../../images/number.png';
 const ProfileUser = () => (
   <Row>
-    <Col xl="6" className="Profile-User" style={{ textAlign: 'right' }}>
+    <Col xl="6" className="Profile-User">
       <Form>
         <AnimateField
           className="profile-name"

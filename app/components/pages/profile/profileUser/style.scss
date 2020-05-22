@@ -1,15 +1,10 @@
 
-.profile-name,.profile-Email,.profile-Number{
-  padding-left:30px;
-  background-repeat: no-repeat;
-  background-position: 5px;
-}
-.profile-Number{
-  text-align: left;
-
-}
-.profile-Email{
-  text-align: left;
+.Profile-User{
+  .profile-name,.profile-Email,.profile-Number{
+    padding-left:30px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+  }
 }
 .profile-img img{
   width: 100%;

@@ -1,23 +1,6 @@
-.profile-numberView{
-  text-align: left;
-  padding-left:36px;
-  // background-image: url("../../images/number.png");
-  background-repeat: no-repeat;
-  background-position: 5px;
-  background-color: #dfe4ea;
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
 }
-.Profilepay p{
-  text-align: justify;
-}
-.profile-pay{
-  text-align: left;
-  padding-left:36px;
-  // background-image: url("../../images/email.png");
-  background-repeat: no-repeat;
-  background-position: 5px;
-
-}
-.profile-img img{
-  width: 100%;
-  height: auto;
-}
+.ticket-top,.ticket-department{height: 50px !important;}
+.ticket-topic input{height: 177px !important;}

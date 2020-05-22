@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Loading from '../../../components/snappLoading';
-import ProfileExtention from '../../../components/pages/profile/profileExtention';
+import profilePayment from '../../../components/pages/profile/profilePayment';
 import Profilethem from '../../../components/pages/profile/profileTemplate';
 const ProfileIndex = () => {
   const [loading] = useState(false);
@@ -8,8 +8,8 @@ const ProfileIndex = () => {
   return (
     <>
       {!loading ? (
-        <Profilethem title="افزونه ها" txt="افزونه جدید">
-          <ProfileExtention />
+        <Profilethem title="پرداخت ها">
+          <profilePayment />
         </Profilethem>
       ) : (
         <div className="center hFull">

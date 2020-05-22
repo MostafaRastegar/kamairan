@@ -1,6 +1,11 @@
 .mainProfile{
   margin-top: 32px;
-  .profile-theme h1{
+  .profile-theme{
+    border-radius: 10px;
+    border: solid 1px #dfe4ea;
+    background-color: #ffffff;
+    padding:30px 30px 0px 30px;
+   h1{
     font-size: 20px;
     font-weight: bold;
     text-align: right;
@@ -8,13 +13,17 @@
     margin-bottom: 20px;
     font-family: IRANyekan;
   }
-  .profile-theme-button{display:none; margin-right: auto;font-size: 16px;}
-  .profile-theme{
-    border-radius: 10px;
-    border: solid 1px #dfe4ea;
-    background-color: #ffffff;
-    padding:30px 30px 0px 30px;
+  .snapp-icon{
+    position: absolute;
+    bottom: 13px;
+    left: 40px;
   }
+  .theme-top{
+    margin-bottom: 30px;
+  }
+}
+  .profile-theme-button{display:none; margin-right: auto;font-size: 16px;}
+ 
   .ProfileSidebar{
     border-radius: 10px;
     border: solid 2px #dfe4ea;
