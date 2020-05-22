@@ -15,6 +15,7 @@ import Register from '../RegisterPage';
 import Profile from '../ProfilePage/mainPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
+import TenderCart from '../../components/snappTenderCart';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/verify-code" component={VerifyCode} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/tender-cart" component={TenderCart} />
         <Route component={Page404} />
       </Switch>
     </SnappLayout>
