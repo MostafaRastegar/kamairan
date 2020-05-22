@@ -2,9 +2,14 @@
 .news-card{
   border: 1px solid #cccccc;
   border-radius: 15px;
-  height: 240px;
+  height: 299px;
   width: 100%;
   overflow: hidden;
+  &__img{
+    img{
+      width: 300px;
+    }
+  }
   p{
     text-align: justify;
   }
@@ -13,9 +18,10 @@
     margin-bottom: auto;
   }
   &__bottom{
-    border-top: 1px solid #cccccc;
+    border-top: 1px dashed $color-border-2;
+    height: 68px;
     &-date{
-      border-right: 1px solid #cccccc;
+      border-right: 1px dashed $color-border-2;
       margin-left: auto;
     }
   }

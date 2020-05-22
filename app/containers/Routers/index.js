@@ -15,7 +15,7 @@ import Register from '../RegisterPage';
 import Profile from '../ProfilePage/mainPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
-import TenderCart from '../../components/tenderCart';
+import TenderCart from '../../components/snappTenderCart';
 
 function App() {
   return (
