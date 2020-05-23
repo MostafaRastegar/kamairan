@@ -1,0 +1,27 @@
+.Profile-setting{
+  border-radius: 5px;
+  border-color: #444;
+  h2{
+    font-size: 18px;
+    color:#2c3e50;
+  }
+  p{
+    font-size: 16px;
+    color:#3d3d3d;
+  }
+  .tag span{
+    border-radius: 10px;
+    padding:5px;
+    background-color:#dcdde1 ;
+    color: #3d3d3d;
+    margin-left: 10px;
+  }
+  button{
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  select{
+    height: 50px !important;
+    width:600px;
+  }
+}
