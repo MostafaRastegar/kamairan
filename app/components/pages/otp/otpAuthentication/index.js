@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { loginSubmit, useFormInput } from './util';
 import SnappAuthLayout from '../../../snappAuthLayout';
 import { AnimateField } from '../../../snappForm';
-
 import numberIcon from '../../../../images/number.png';
 import passwordIcon from '../../../../images/password.png';
 

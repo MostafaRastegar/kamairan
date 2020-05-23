@@ -13,6 +13,14 @@ import AuthenticationPage from '../AuthenticationPage';
 import VerifyCode from '../VerifyCodePage';
 import Register from '../RegisterPage';
 import Profile from '../ProfilePage/mainPage';
+import ProfileService from '../ProfilePage/servicePage';
+import ProfilechPass from '../ProfilePage/changePassPage';
+import ProfileExtention from '../ProfilePage/extentionPage';
+import ProfileCharge from '../ProfilePage/chargePage';
+import ProfileSetting from '../ProfilePage/settingPage';
+import ProfileTicket from '../ProfilePage/TicketPage';
+import ProfilePayment from '../ProfilePage/paymentPage';
+import ProfileSupport from '../ProfilePage/supportPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
 import TenderCart from '../../components/snappTenderCart';
@@ -28,6 +36,14 @@ function App() {
         <Route exact path="/verify-code" component={VerifyCode} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/profile-service" component={ProfileService} />
+        <Route exact path="/profile-password" component={ProfilechPass} />
+        <Route exact path="/profile-extention" component={ProfileExtention} />
+        <Route exact path="/profile-charge" component={ProfileCharge} />
+        <Route exact path="/profile-setting" component={ProfileSetting} />
+        <Route exact path="/profile-ticket" component={ProfileTicket} />
+        <Route exact path="/profile-payment" component={ProfilePayment} />
+        <Route exact path="/profile-support" component={ProfileSupport} />
         <Route exact path="/tender-cart" component={TenderCart} />
         <Route component={Page404} />
       </Switch>
