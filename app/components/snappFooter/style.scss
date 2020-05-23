@@ -1,0 +1,67 @@
+@import '../../style/sass/variable';
+  .main-footer {
+  width: auto;
+  height: 100%;
+  background-color: #333840;
+  padding-top:100px;
+  background-image: url('../../images/footer-back.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  .footer-section-one {
+    ul {
+      margin-top: 23px;
+      li {
+        font-size: 14px;
+        list-style-type:none;
+      }
+    }
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e67e22;
+    }
+    p {
+      margin-top: 23px;
+      text-align: justify;
+      font-size: 16px;
+    }
+    .left-img {
+      margin-right: auto;
+      margin-top: 23px;
+      margin-bottom: 17px;
+      .left-img__sabt {
+        margin-left: 20px;
+        width: 130.2px;
+        height: 150px;
+      }
+      .left-img__enamad {
+        margin-left: 95px;
+        width: 94.8px;
+        height: 150px;
+      }
+    }
+  }
+  .footer-section-two{
+    font-size:14px;
+    margin-bottom: 12px;
+    img{
+      margin-left: 9px;
+    }
+    .address{
+      margin-bottom: 11px;
+    }
+    .mail{
+      margin-right: 100px;
+    }
+    .tel{
+      margin-right:100px;
+    }
+  }
+  .footer-section-three {
+    height: 86px;
+    font-size: 12px;
+    border-top: 1px dashed;
+    padding-top: 35px;
+  }
+}

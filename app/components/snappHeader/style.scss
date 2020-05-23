@@ -1,0 +1,80 @@
+@import '../../style/sass/variable';
+
+.main-header {
+  background-color: #333840;
+  color: white;
+  background-image: url('../../images/bak-header.png');
+  background-repeat: no-repeat;
+  .nav-link {
+    color: white;
+  }
+  .logo {
+    /*height: 71px;*/
+  }
+  &__bottom {
+    height: 130px;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    &-login-register,
+    &-logo {
+      display: flex;
+      justify-content: flex-end;
+      > * {
+        margin-right: 12px;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 23px;
+      }
+    }
+    &-logo {
+      justify-content: flex-start;
+      > * {
+        margin-right: 0;
+      }
+    }
+    &-menu {
+      font-size: 12px;
+    }
+    &-home {
+      max-width: 979px;
+      margin: 0 auto;
+      padding-bottom: 140px;
+    }
+  }
+  &__top {
+    height: 40px;
+    border-bottom: 1px dashed white;
+    &-inner {
+      align-items: center;
+      justify-items: center;
+    }
+    &-social {
+      img {
+        width: 24px;
+      }
+    }
+    .nav-link-logo {
+      margin-left: 15px;
+      display: none;
+    }
+    &-menu {
+      font-size: 12px;
+    }
+  }
+  .btn-support {
+    border: 1px solid #f8efba;
+    color: #f8efba;
+    padding-left: 10px;
+    img{
+      width:28px;
+      margin-right:10px;
+    }
+  }
+  .btn-danger {
+    background-image: linear-gradient(to top, #e1031c, #ed4054);
+  }
+}

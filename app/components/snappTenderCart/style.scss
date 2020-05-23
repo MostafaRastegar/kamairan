@@ -1,0 +1,66 @@
+@import '../../style/sass/variable';
+.tender-cart {
+  .cart-box {
+    height: 130px;
+    border-radius: 10px;
+    border: dashed 2px #48c37c;
+    background-color: #ffffff;
+    .cart-detail {
+      .pic-avatar {
+        height: 126px;
+        border-left: dashed 2px #48c37c;
+        .avatar {
+          width: 59px;
+          margin: 0 34px;
+        }
+      }
+      .topic {
+        padding-right: 16px;
+        padding-left: 16px;
+        width: 100%;
+        .topic-text {
+          justify-content: space-between;
+          padding-top: 18px;
+          .text__right {
+            color: #4b4b4b;
+          }
+          .text__left {
+            color: #353b48;
+            margin-right: auto;
+          }
+        }
+        .topic-text__section2 {
+          padding-top: 5px;
+          .text__right {
+            color: #4b4b4b;
+          }
+        }
+        .topic-text__section-detail {
+          color: #353b48;
+          padding-top: 10px;
+          .text__right-detail {
+            .icon-right {
+              width: 26px;
+              height: 21px;
+            }
+          }
+          .text__center-detail {
+            padding-right: 35px;
+            .icon-center {
+              width: 18px;
+              height: 22px;
+            }
+          }
+          .text__left-detail {
+            margin-right: auto;
+            text-align: left;
+            .icon-left {
+              width: 22px;
+              height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

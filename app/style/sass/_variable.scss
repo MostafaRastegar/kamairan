@@ -1,0 +1,88 @@
+$purple-1: #cd84f1;
+$purple-2: #c56cf0;
+$purple-3: #9b59b6;
+$purple-4: #8e44ad;
+
+$pink-1: #ffcccc;
+$pink-2: #ffb8b8;
+
+$red-1: #ff4d4d;
+$red-2: #ff3838;
+$red-3: #e74c3c;
+$red-4: #c0392b;
+$red-4: #e1031c;
+
+
+$yellow-1: #fffa65;
+$yellow-2: #fff200;
+$yellow-3: #ffaf40;
+$yellow-4: #ff9f1a;
+$yellow-5: #f1c40f;
+$yellow-6: #f39c12;
+$yellow-7: #e67e22;
+$yellow-8: #d35400;
+
+
+$green-1: #32ff7e;
+$green-2: #3ae374;
+$green-3: #2ecc71;
+$green-4: #27ae60;
+
+$blue-1: #7efff5;
+$blue-2: #67e6dc;
+$blue-3: #18dcff;
+$blue-4: #17c0eb;
+$blue-5: #7d5fff;
+$blue-6: #7158e2;
+$blue-7: #3498db;
+$blue-8: #2980b9;
+
+$gray-1: #ecf0f1;
+$gray-2: #bdc3c7;
+$gray-3: #7f8c8d;
+$gray-4: #95a5a6;
+$gray-5: #2c3e50;
+$gray-6: #34495e;
+$gray-7: #4b4b4b;
+$gray-8: #3d3d3d;
+$gray-9: #d5dbde;
+
+// set variable
+$color-primary: $gray-7;
+$color-success: $green-4;
+$color-secondary: $red-4;
+
+$color-tag: #21974E;
+$color-toggle: #4ad964;
+
+$color-danger: $red-4;
+$color-warning: $yellow-4;
+$color-info: $blue-8;
+$color-black: #000000;
+$color-white: #fff;
+$color-disable: $gray-2;
+
+$color-green:$color-success;
+$color-red: $color-danger;
+$color-blue: $color-info;
+$color-yellow: $yellow-4;
+
+$color-border-input:$gray-3;
+$color-border-2: $gray-9;
+
+$color-text-black: $color-black;
+$color-text-input: $color-primary;
+
+$font-family-iranyekan: iranyekan;
+
+$--breakpoint-xxs: 420px;
+$--breakpoint-xs: 480px;
+$--breakpoint-sm: 576px;
+$--breakpoint-md: 768px;
+$--breakpoint-lg: 992px;
+$--breakpoint-xl: 1200px;
+$--breakpoint-xxl: 1366px;
+
+
+$--font-family-sans-serif: $font-family-iranyekan;
+$--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
