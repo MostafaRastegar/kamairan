@@ -9,7 +9,7 @@ const HeaderCategory = props => {
   return (
     <Link to={link} className="header-category center rCol">
       <img src={src} alt={title} />
-      <h2 className="text18 color-white topP15">{title}</h2>
+      <h2 className="text16 color-white topP15">{title}</h2>
     </Link>
   );
 };

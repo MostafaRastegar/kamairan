@@ -15,30 +15,30 @@ const TenderCart = () => (
           </div>
           <div className="topic">
             <div className="topic-text flex">
-              <span className="text__right text16">
+              <span className="text__right text14">
                 <span className="bold">عنوان</span>: مناقصه عملیات اجرائی شبکه
                 جمع آوری فاضلاب
               </span>
-              <span className="text12 text__left">ارسال شده: 20 دقیقه پیش</span>
+              <span className="text10 text__left">ارسال شده: 20 دقیقه پیش</span>
             </div>
             <div className="topic-text__section2">
-              <span className="text__right text16">
+              <span className="text__right text14">
                 <span className="bold">برگزار کننده</span>: شرکت آب و فاضلاب
                 استان کرمان
               </span>
             </div>
             <div className="topic-text__section-detail flex">
-              <div className="text__right-detail flex">
+              <div className="text__right-detail flex text12">
                 <img className="icon-right leftM5" src={layer38} alt="" />
                 <span>مهلت دریافت اسناد: 30 فروردین 1399</span>
               </div>
-              <div className="text__center-detail flex">
+              <div className="text__center-detail flex text12">
                 <img className="icon-center leftM5" src={layer37} alt="" />
                 <span>استان: کرمان - رفسنجان</span>
               </div>
-              <div className="text__left-detail leftContent">
+              <div className="text__left-detail leftContent center">
                 <img className="icon-left leftM5" src={layer23} alt="" />
-                <span className="color-spenaj text-left">مشاهده معامله</span>
+                <span className="color-green text-left">مشاهده معامله</span>
               </div>
             </div>
           </div>

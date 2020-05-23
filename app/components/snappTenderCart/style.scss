@@ -7,12 +7,11 @@
     background-color: #ffffff;
     .cart-detail {
       .pic-avatar {
-        height: 129px;
+        height: 126px;
         border-left: dashed 2px #48c37c;
         .avatar {
-          width: 66px;
-          height: 71px;
-          margin: 0 38px 0 49px;
+          width: 59px;
+          margin: 0 34px;
         }
       }
       .topic {
@@ -31,19 +30,18 @@
           }
         }
         .topic-text__section2 {
-          padding-top: 10px;
+          padding-top: 5px;
           .text__right {
             color: #4b4b4b;
           }
         }
         .topic-text__section-detail {
           color: #353b48;
-          padding-top: 14px;
-          padding-bottom: 18px;
+          padding-top: 10px;
           .text__right-detail {
             .icon-right {
-              width: 28px;
-              height: 22px;
+              width: 26px;
+              height: 21px;
             }
           }
           .text__center-detail {
@@ -57,8 +55,8 @@
             margin-right: auto;
             text-align: left;
             .icon-left {
-              width: 24px;
-              height: 24px;
+              width: 22px;
+              height: 22px;
             }
           }
         }
