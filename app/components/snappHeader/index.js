@@ -37,7 +37,7 @@ const Header = () => {
           <Container>
             <Row>
               <div className="col-lg-12 mt-3 mb-3">
-                <div className="searchBox-title text18 bottomM15">
+                <div className="searchBox-title text16 bottomM15">
                   <span className="leftP5">در بین</span>
                   <span className="leftP5 color-green">11000000</span>
                   <span>معاملات سایت جستجو کنید!</span>
