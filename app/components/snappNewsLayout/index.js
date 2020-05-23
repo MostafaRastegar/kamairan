@@ -6,7 +6,7 @@ import NewsCard from '../snappNewsCard';
 // import styled from 'styled-components';
 const SnappNewsLayout = () => (
   <div className="">
-    <div className="center topM30 bottomM30 flex">
+    <div className="center bottomM10 flex">
       <span className="color-secondary leftMauto">
         <h3 className="text24 bold gray7">آخرین مطالب سایت</h3>
         <p className="text16 bold-500 gray-7">

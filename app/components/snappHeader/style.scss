@@ -68,6 +68,11 @@
   .btn-support {
     border: 1px solid #f8efba;
     color: #f8efba;
+    padding-left: 10px;
+    img{
+      width:28px;
+      margin-right:10px;
+    }
   }
   .btn-danger {
     background-image: linear-gradient(to top, #e1031c, #ed4054);

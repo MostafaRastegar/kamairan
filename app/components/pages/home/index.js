@@ -73,7 +73,7 @@ const HomePage = () => {
           </div>
 
           <div className="container">
-            <div className="topM20 bottomM20">
+            <div className="bottomM20">
               <SnappNewsLayout />
             </div>
           </div>

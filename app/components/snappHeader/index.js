@@ -8,6 +8,9 @@ import HeaderTopMenu from './HeaderTopMenu';
 import SearchBox from '../snappSearchBox';
 import HeaderCategory from '../snappHeaderCategory';
 import catContent from '../../images/icons/category-content.png';
+import catDownload from '../../images/icons/category-download.png';
+import catOnline from '../../images/icons/category-online.png';
+import catUpdate from '../../images/icons/category-update.png';
 
 // import SnappAutocomplete from '../snappAutocomplete';
 // import messages from './messages';
@@ -57,22 +60,22 @@ const Header = () => {
                   </div>
                   <div className="col-3">
                     <HeaderCategory
-                      title="محتوای ویژه"
-                      src={catContent}
+                      title="دانلود اسناد"
+                      src={catDownload}
                       link="/"
                     />
                   </div>
                   <div className="col-3">
                     <HeaderCategory
-                      title="محتوای ویژه"
-                      src={catContent}
+                      title="آموزش آنلاین"
+                      src={catOnline}
                       link="/"
                     />
                   </div>
                   <div className="col-3">
                     <HeaderCategory
-                      title="محتوای ویژه"
-                      src={catContent}
+                      title="بروز رسانی لحظه‌ای اطلاعات"
+                      src={catUpdate}
                       link="/"
                     />
                   </div>
