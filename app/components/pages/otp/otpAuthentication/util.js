@@ -24,7 +24,7 @@ export function loginSubmit(recipient, type) {
   const SubmitComp = () => (
     <button
       type="button"
-      style={{ width: '150px' }}
+      style={{ width: '100%' }}
       className={`btn btn-auth btn-success ${btnLoading().loginLoading &&
         'btn-loading btn-disable disabled-link'}`}
       onClick={() => loginSubmitFunc()}
