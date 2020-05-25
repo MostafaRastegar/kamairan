@@ -1,17 +1,19 @@
-body{
+body {
   font-family: $font-family-iranyekan;
   padding: 0px;
   margin: 0px;
   display: flex;
   background: #f9f9fa;
-	flex-direction: column;
-	-webkit-user-select: none;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-touch-callout: none;
-
-
+  font-size: 14px;
+  line-height: 1.94;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
-input, input:before, input:after {
+input,
+input:before,
+input:after {
   -webkit-user-select: initial;
   -khtml-user-select: initial;
   -moz-user-select: initial;
@@ -19,15 +21,20 @@ input, input:before, input:after {
   user-select: initial;
 }
 ul {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
-a{
-  &:hover{
+a {
+  &:hover {
     text-decoration: none;
-    color:$color-secondary;
-    h1,h2,h3,h4,h5,h6{
-      color:$color-secondary;
+    color: $color-secondary;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-secondary;
     }
   }
 }

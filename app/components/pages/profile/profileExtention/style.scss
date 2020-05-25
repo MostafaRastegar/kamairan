@@ -1,3 +1,5 @@
+@import '../../../../style/sass/variable.scss';
+
 .Profile {
   font-size: 14px;
 }
@@ -10,7 +12,7 @@
 }
 .Profile thead {
   border-radius: 5px;
-  background-color: #ecf0f1;
+  background-color: $gray-1;
 }
 .Profile td {
   color: #434343;
@@ -28,18 +30,18 @@
   border-top: none;
 }
 td.active {
-  color: #2ecc71 !important ;
+  color: $green-3 !important ;
 }
 td.unactive {
   color: #e20a23;
 }
 td.disabled {
-  color: #bdc3c7;
+  color: $gray-2;
 }
 td.ending {
-  color: #f39c12;
+  color: $yellow-6;
 }
 .Profile .btn-warning {
   color: #fff;
-  background-color: #f39c12;
+  background-color: $yellow-6;
 }

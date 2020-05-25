@@ -1,26 +1,28 @@
 @import '../../style/sass/variable';
-.news-card{
+.news-card {
   border: 1px solid #cccccc;
   border-radius: 15px;
-  height: 299px;
+  height: 266px;
   width: 100%;
   overflow: hidden;
-  &__img{
-    img{
-      width: 300px;
+  &__img {
+    img {
+      width: 266px;
     }
   }
-  p{
+  p {
     text-align: justify;
   }
-  &__detail{
-    height: 184px;
+  &__detail {
     margin-bottom: auto;
   }
-  &__bottom{
+  &__bottom {
+    margin-top: auto;
     border-top: 1px dashed $color-border-2;
-    height: 68px;
-    &-date{
+    height: 60px;
+    &-date {
+      padding: 8px 15px;
+      line-height: 1.3;
       border-right: 1px dashed $color-border-2;
       margin-left: auto;
     }

@@ -37,10 +37,10 @@
       }
     }
     &-menu {
-      font-size: 18px;
+      font-size: 12px;
     }
     &-home {
-      max-width: 1100px;
+      max-width: 979px;
       margin: 0 auto;
       padding-bottom: 140px;
     }
@@ -67,10 +67,14 @@
   }
   .btn-support {
     border: 1px solid #f8efba;
-    font-size: 16px;
     color: #f8efba;
+    padding-left: 10px;
+    img{
+      width:28px;
+      margin-right:10px;
+    }
   }
   .btn-danger {
-    background-image: linear-gradient(to top, #e1031c, #ed4054);
+    background-image: linear-gradient(to top, $red-4, #ed4054);
   }
 }

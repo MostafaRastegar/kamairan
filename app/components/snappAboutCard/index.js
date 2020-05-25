@@ -12,11 +12,11 @@ import './style.scss';
 const AboutCard = () => (
   <div className="about-card flex padd30 bg-white">
     <div className="leftMauto w50 about-card__title">
-      <h2 className="text22 color-green">
+      <h2 className="text20 color-green">
         <img className="leftM10" src={logoSmall} alt="" />
         <span>چی شد که کاما رو تاسیس کردیم؟</span>
       </h2>
-      <p className="text22">
+      <p className="text16">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
@@ -24,8 +24,8 @@ const AboutCard = () => (
         درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
         نرم افزارها شناخت بیشتری را برای طراحان رایانه ای...
       </p>
-      <Link to="/" className="btn btn-success">
-        درمورد اهداف کاما ایران بیشتر بدانیم ...
+      <Link to="/" className="btn btn-success float-left">
+        بیشتر بدانیم
       </Link>
     </div>
     <div className="rightMauto center rightP20 w50">

@@ -1,3 +1,5 @@
+@import '../../../../style/sass/variable.scss';
+
 .ProfileSidebar .nav-item {
   border-bottom: solid 2px #dfe4ea;
   padding: 9px;
@@ -22,13 +24,13 @@
 }
 .ProfileSidebar .nav-item .number {
   border-radius: 100px;
-  border: solid 1px #27ae60;
+  border: solid 1px $green-4;
   background-color: #b0f8ce;
   margin-right: auto;
   width: 22px;
   height: 22px;
   margin-top: 7px;
   padding-right: 8px;
-  color: #27ae60;
+  color: $green-4;
   font-size: 16px;
 }
