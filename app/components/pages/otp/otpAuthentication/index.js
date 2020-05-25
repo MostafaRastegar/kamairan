@@ -11,14 +11,13 @@ import './style.scss';
 const OtpAuthentication = () => {
   const recipient = useFormInput('');
   const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
-  console.log('login');
   return (
     <SnappAuthLayout title="ورود">
       <div className="login-form">
         <Form>
           <AnimateField
-            className="col-12 username"
-            placeholder=" "
+            className=" username"
+            placeholder="*********09 "
             name="recipient"
             value={recipient.value}
             type="tel"
@@ -28,8 +27,8 @@ const OtpAuthentication = () => {
             icon={numberIcon}
           />
           <AnimateField
-            className="col-12"
-            placeholder=" "
+            className=" loginPassword"
+            placeholder="********* "
             name="password"
             value={recipient.value}
             type="text"
@@ -39,11 +38,11 @@ const OtpAuthentication = () => {
             icon={passwordIcon}
           />
 
-          <div className="">
+          <div>
             <SubmitComp />
           </div>
         </Form>
-        <div className="form-bottom flex-col">
+        <div className="form-bottom flex rCol">
           <span>
             حساب کاربری ندارید؟{' '}
             <Link to="/" className="orange">
