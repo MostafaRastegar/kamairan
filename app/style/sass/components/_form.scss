@@ -4,46 +4,60 @@
 .form-group {
   position: relative;
   margin-bottom: 18px;
+  &__icon {
+    .form-control {
+      padding-left: 40px !important;
+    }
+    img {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+    }
+  }
 }
-.form-control{
+.form-control {
   background-color: transparent;
-  padding-left:20px;
-  padding-right:20px;
-  width:100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
   height: 50px;
   border-radius: 10px;
-  border: solid 1px #cdcdcd;
+  border: solid 1px $color-border-input;
   background-color: #ffffff;
   color: $gray-1;
   font-size: 14px;
-  textarea{
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  textarea {
     // border: 0;
     // outline: 0;
     width: 100%;
     // padding: 0;
   }
 }
-.form-control:focus{
+.form-control:focus {
   background-color: transparent;
   box-shadow: none;
 }
 
-.panigale__border_red{
-  input,select.form-control{
-    border-color:$color-danger !important;
+.panigale__border_red {
+  input,
+  select.form-control {
+    border-color: $color-danger !important;
   }
 }
-.snapp-form-shabe{
+.snapp-form-shabe {
   position: absolute;
   left: 14px;
   direction: ltr;
   bottom: 3px;
-  + input{
+  + input {
     padding-left: 17px;
   }
 }
-.snapp-form-validation{
-  color:$color-danger;
+.snapp-form-validation {
+  color: $color-danger;
   font-size: 12px;
   padding-right: 12px;
   padding-top: 2px;
@@ -51,7 +65,7 @@
   bottom: -20px;
   left: 33px;
 }
-.snapp-form-flex{
+.snapp-form-flex {
   display: flex;
   align-items: center;
 }
@@ -60,7 +74,7 @@
   height: 40px;
   width: 100%;
   position: relative;
-  outline: none!important;
+  outline: none !important;
   margin-right: 0;
   overflow: hidden;
   cursor: pointer;
@@ -83,11 +97,13 @@
   padding: 1px 40px 1px 20px !important;
 }
 
-.radio-wrapper input , .radio-modal input  {
+.radio-wrapper input,
+.radio-modal input {
   position: absolute;
   top: -25px;
 }
-.radio-wrapper .radio-face , .radio-modal .radio-face {
+.radio-wrapper .radio-face,
+.radio-modal .radio-face {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -99,7 +115,8 @@
   top: 10px;
   right: 10px;
 }
-.radio-wrapper .radio-face:after , .radio-modal .radio-face:after{
+.radio-wrapper .radio-face:after,
+.radio-modal .radio-face:after {
   position: absolute;
   width: 6px;
   height: 6px;
@@ -111,13 +128,20 @@
   top: 5px;
   right: 5px;
 }
-.radio-wrapper .label-parent input:checked+.radio-face:after , .radio-modal .label-parent input:checked+.radio-face:after{
+.radio-wrapper .label-parent input:checked + .radio-face:after,
+.radio-modal .label-parent input:checked + .radio-face:after {
   background-color: $color-white;
 }
-.basket-confirm.basket-payment .radio-wrapper .label-parent .radio-modal input:checked ~ i {
+.basket-confirm.basket-payment
+  .radio-wrapper
+  .label-parent
+  .radio-modal
+  input:checked
+  ~ i {
   border: 1px solid #5f9be7;
 }
-.radio-wrapper span, .radio-modal span{
+.radio-wrapper span,
+.radio-modal span {
   display: flex;
   height: 36px;
   line-height: 36px;
@@ -127,7 +151,8 @@
   position: relative;
   align-items: center;
 }
-.page-payment__bank-checker img,.banks-row img {
+.page-payment__bank-checker img,
+.banks-row img {
   height: 30px;
   margin-right: auto;
 }
@@ -145,7 +170,8 @@
   position: relative;
   cursor: pointer;
 }
-.checkbox input[type="checkbox"], .checkbox input[type="radio"] {
+.checkbox input[type='checkbox'],
+.checkbox input[type='radio'] {
   opacity: 0;
   z-index: 1;
   cursor: pointer;
@@ -156,13 +182,13 @@
   position: relative;
   padding-right: 5px !important;
   font-size: 12px;
-  a{
+  a {
     color: $color-info !important;
   }
 }
 
 .checkbox label:before {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   width: 17px;
@@ -191,30 +217,32 @@
   text-align: center;
 }
 
-.checkbox-success input[type="checkbox"]:checked+label:before,
-input[type="radio"]:checked+.radio-face{
+.checkbox-success input[type='checkbox']:checked + label:before,
+input[type='radio']:checked + .radio-face {
   background-color: $color-warning;
   // border-color: $color-border-2;
   // border: none;
 }
-input[type="radio"]:checked+.radio-face:after{
+input[type='radio']:checked + .radio-face:after {
   top: 5px;
   right: 5px;
 }
-input[type="checkbox"].styled:checked+label:after, input[type="radio"].styled:checked+label:after {
+input[type='checkbox'].styled:checked + label:after,
+input[type='radio'].styled:checked + label:after {
   font-family: '';
-  content: "s";
+  content: 's';
   font-size: 12px;
   font-weight: bold;
   // top: -2px;
 }
 
-.checkbox-success input[type="checkbox"]:checked+label:after, .checkbox-success input[type="radio"]:checked+label:after {
+.checkbox-success input[type='checkbox']:checked + label:after,
+.checkbox-success input[type='radio']:checked + label:after {
   color: #fff;
 }
 
-.snapp-login-form{
-  .btn{
+.snapp-login-form {
+  .btn {
     margin-right: auto;
   }
 }

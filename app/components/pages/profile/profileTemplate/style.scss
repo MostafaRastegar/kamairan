@@ -2,13 +2,30 @@
 
 .mainProfile{
   margin-top: 32px;
+  table {
+    .btn{
+      height: 25px;
+      border-radius: 5px;
+      line-height: normal;
+    }
+    td,th{
+      padding: 20px 5px;
+      text-align: center;
+    }
+  }
+  form {
+    width: 100%;
+    max-width: 325px;
+    .btn {
+      width: 100%;
+    }
+  }
   .profile-theme{
     border-radius: 10px;
     border: solid 1px #dfe4ea;
     background-color: #ffffff;
-    padding: 20px 30px 20px 5px;
    h1{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: right;
     color: $gray-5;
@@ -16,19 +33,17 @@
     font-family: IRANyekan;
   }
   .snapp-icon{
-    position: absolute;
-    bottom: 13px;
-    left: 40px;
+
   }
   .theme-top{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
   .profile-theme-button{display:none; margin-right: auto;font-size: 16px;}
 
   .ProfileSidebar{
     border-radius: 10px;
-    border: solid 2px #dfe4ea;
+    border: solid 1px #dfe4ea;
     background-color: #fff;
   }
 }

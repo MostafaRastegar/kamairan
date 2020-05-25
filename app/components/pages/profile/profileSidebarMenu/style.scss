@@ -1,8 +1,13 @@
 @import '../../../../style/sass/variable.scss';
 
 .ProfileSidebar .nav-item {
-  border-bottom: solid 2px #dfe4ea;
-  padding: 9px;
+  border-bottom: solid 1px #dfe4ea;
+  padding: 9px 20px;
+  margin-right: 0 !important;
+  position: relative;
+  &:last-child{
+    border-bottom: 0;
+  }
 }
 .ProfileSidebar .navbar-nav {
   width: 100%;
@@ -29,8 +34,6 @@
   margin-right: auto;
   width: 22px;
   height: 22px;
-  margin-top: 7px;
-  padding-right: 8px;
   color: $green-4;
   font-size: 16px;
 }

@@ -6,7 +6,7 @@ import SidebarMenu from '../profileSidebarMenu';
 const Profilethem = props => {
   const { title, children, txt } = props;
   return (
-    <div className="mainProfile">
+    <div className="mainProfile topM30 bottomM30">
       <Container>
         <Row>
           <Col xl="3">
@@ -15,7 +15,7 @@ const Profilethem = props => {
             </div>
           </Col>
           <Col xl="9">
-            <div className="profile-theme">
+            <div className="profile-theme padd30">
               <div className="theme-top flex">
                 <h1>{title}</h1>
                 {!!txt && (
