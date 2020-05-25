@@ -13,7 +13,7 @@ const HomePage = () => {
     <>
       {!loading ? (
         <div className="home">
-          <div className="bottomP30">
+          <div className="bottomP20">
             <div className="container">
               <div className="row">
                 <div className="col-12">
@@ -22,13 +22,13 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="bottomP30">
+          <div className="bottomP20">
             <div className="container">
               <div className="row">
                 <div className="col-4">
                   <Link
                     to="/"
-                    className="btn btn-success wFull padd35 hAuto text22"
+                    className="btn btn-success wFull padd25 hAuto text18"
                   >
                     مناقصه
                   </Link>
@@ -36,7 +36,7 @@ const HomePage = () => {
                 <div className="col-4">
                   <Link
                     to="/"
-                    className="btn btn-danger wFull padd35 hAuto text22"
+                    className="btn btn-danger wFull padd25 hAuto text18"
                   >
                     مزایده
                   </Link>
@@ -44,7 +44,7 @@ const HomePage = () => {
                 <div className="col-4">
                   <Link
                     to="/"
-                    className="btn btn-info wFull padd35 hAuto text22"
+                    className="btn btn-info wFull padd25 hAuto text18"
                   >
                     خرید جزئی و متوسط
                   </Link>
@@ -54,11 +54,13 @@ const HomePage = () => {
           </div>
 
           <div className="container">
-            <div className="center bottomM30 flex bg-white round10 borderAll topP30 bottomP30 leftP20 rightP20">
-              <span className="color-secondary bold text14 leftMauto">
+            <div className="center bottomM20 flex bg-white round10 borderAll topP20 bottomP20 leftP20 rightP20">
+              <span className="bold text18 leftMauto">
                 پیشخوان آنلاین معاملات
               </span>
-              <Link to="/">جستجوی کنید</Link>
+              <Link to="/" className="color-secondary">
+                جستجوی کنید
+              </Link>
             </div>
             <div className="topM20">
               <SnappContentLayout>
@@ -71,7 +73,7 @@ const HomePage = () => {
           </div>
 
           <div className="container">
-            <div className="topM20 bottomM30">
+            <div className="bottomM20">
               <SnappNewsLayout />
             </div>
           </div>
