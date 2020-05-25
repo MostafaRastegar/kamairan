@@ -34,7 +34,9 @@ const ProfileUser = () => (
           label="ایمیل"
           icon={mailIcon}
         />
-        <Button color="success">ویرایش اطلاعات</Button>
+        <Button className="topM15" color="success">
+          ویرایش اطلاعات
+        </Button>
       </Form>
     </Col>
     <Col className="profile-img" xl="6">

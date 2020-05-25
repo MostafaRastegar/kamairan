@@ -28,6 +28,7 @@
 .Profile tbody td {
   border-bottom: 1px solid #dfe4ea;
   border-top: none;
+  vertical-align: middle;
 }
 td.active {
   color: $green-3 !important ;
