@@ -8,13 +8,13 @@ import mail from '../../images/mail.png';
 import './style.scss';
 
 const SnappFooter = () => (
-  <footer className="main-footer">
+  <footer className="main-footer gray1">
     <Container>
       <div className="footer-section-one flex">
         <Row>
           <Col className="footer-section-one__about " xl="5">
             <span className="title hcenter">درباره کاما ایران</span>
-            <p>
+            <p className="leftP20">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
@@ -54,18 +54,18 @@ const SnappFooter = () => (
           </Col>
         </Row>
       </div>
-      <div className="footer-section-two flex-col">
+      <div className="footer-section-two flex-col bottomP30">
         <div className="address">
           <img src={loc} alt="" />
           <span>تهران، ستارخان، خیابان کاشانی پور، پاساژ توحید واحد 124</span>
         </div>
         <div className="flex">
           <div className="mail">
-            <span>info@kamairan.com</span>
+            <span className="leftP10">info@kamairan.com</span>
             <img src={mail} alt="" />
           </div>
           <div className="tel">
-            <span>02188102030</span>
+            <span className="leftP10">02188102030</span>
             <img src={tel} alt="" />
           </div>
         </div>

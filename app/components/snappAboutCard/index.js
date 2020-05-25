@@ -4,14 +4,18 @@ import React from 'react';
 // import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import aboutCardImg from '../../images/about-card.png';
+import logoSmall from '../../images/logo-small.png';
 import './style.scss';
 
 // import messages from './messages';
 
 const AboutCard = () => (
-  <div className="about-card flex padd30">
-    <div className="leftMauto">
-      <h2 className="text22">چی شد که کاما رو تاسیس کردیم؟</h2>
+  <div className="about-card flex padd30 bg-white">
+    <div className="leftMauto w50 about-card__title">
+      <h2 className="text22 color-green">
+        <img className="leftM10" src={logoSmall} alt="" />
+        <span>چی شد که کاما رو تاسیس کردیم؟</span>
+      </h2>
       <p className="text22">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
@@ -24,7 +28,7 @@ const AboutCard = () => (
         درمورد اهداف کاما ایران بیشتر بدانیم ...
       </Link>
     </div>
-    <div className="rightMauto center rightP20">
+    <div className="rightMauto center rightP20 w50">
       <img src={aboutCardImg} alt="social" />
     </div>
   </div>

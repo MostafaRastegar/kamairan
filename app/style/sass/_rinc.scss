@@ -143,6 +143,9 @@
 .disableBg {
   background-color: $color-disable;
 }
+.red2{
+  color: $red-2;
+}
 
 .gray1 {
   color: $gray-1;
@@ -1051,7 +1054,7 @@
 
 .borderAll {
   border-width: 1px;
-  border-color: $color-border-input;
+  border-color: $color-border-2;
   border-style: solid;
 }
 .borderWhite {

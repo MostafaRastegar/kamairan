@@ -1,30 +1,35 @@
 import React from 'react';
 import './style.scss';
-import { Row, Col, Form, Button } from 'reactstrap';
-import { AnimateField } from '../../../snappForm';
+import { Form, Button, FormGroup, Label, Input } from 'reactstrap';
 
 const ProfileSetting = () => (
-  <Row>
-    <Col xl="12" className="Profile-setting">
-      <h2>تنظیمات سرویس : خرید جزوی متوسط و مناقصه</h2>
-      <span>
-        با انتخاب دسته بندی، اولویت نمایش معاملات براسا دسته بندی های انتخابی
-        تغییر خواهدکرد
-      </span>
-      <Form>
-        <AnimateField
-          className="setting-group"
-          placeholder="انتخاب کنید"
-          name="number"
-          type="textarea"
-          label="دسته بندی مناقصه"
-        />
-        <Button color="success">اضافه شود</Button>
-      </Form>
+  <div className="Profile-setting">
+    <h2>تنظیمات سرویس : خرید جزوی متوسط و مناقصه</h2>
+    <p>
+      با انتخاب دسته بندی، اولویت نمایش معاملات براساس دسته بندی های انتخابی
+      تغییر خواهدکرد
+    </p>
+    <Form className="flex">
+      <FormGroup>
+        <Label>دسته بندی ناقصه</Label>
+        <Input type="select" name="select">
+          <option>انتخاب کنید</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </Input>
+      </FormGroup>
+      <Button color="success" className="wfull">
+        اضافه شود
+      </Button>
+    </Form>
+
+    <div className="tag">
       <span> حمل و نقل، امور گمرکی، ترخیص، تورهای گردشی و خدمات پستی</span>
       <span> حمل و نقل، امور گمرکی، ترخیص، تورهای گردشی و خدمات پستی</span>
-    </Col>
-  </Row>
+    </div>
+  </div>
 );
 
 export default ProfileSetting;

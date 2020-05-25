@@ -1,7 +1,13 @@
 @import '../../style/sass/variable';
 .about-card{
-  border: 1px solid #cccccc;
+  border: 1px solid $color-border-2;
   border-radius: 15px;
+  margin-top: -65px;
+  &__title{
+    img{
+      width: 50px;
+    }
+  }
   p{
     text-align: justify;
   }
