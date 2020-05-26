@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 // import { Container, Row } from 'reactstrap';
 import Countdown from 'react-countdown';
 import OtpInput from 'react-otp-input';
@@ -34,17 +33,17 @@ function VerifyCode(
   const renderer = ({ minutes, seconds, completed }) => {
     if (completed) {
       return (
-        <div>
-          <p>
+        <div className="wFull flex hCenter">
+          {resetComp(props)}
+          <p className="rightMauto bottomM">
             <b className="gray1">۰۰:۰۰</b>
           </p>
-          {resetComp(props)}
         </div>
       );
     }
     return (
-      <div>
-        <p>
+      <div className="wFull flex hCenter">
+        <p className="rightMauto bottomM">
           <b className="gray1">
             {minutes}:{seconds}
           </b>
@@ -68,9 +67,8 @@ function VerifyCode(
 
   return (
     <SnappAuthLayout title="تایید ثبت نام">
-      <div className="activationCode__edit__wrapper topM10 wFull">
+      <div className="activationCode__edit__wrapper topM10 wFull rightText">
         <AnimateField
-          className="col-12"
           placeholder=" "
           name="signUpPhone"
           value="09358537536"
@@ -79,43 +77,38 @@ function VerifyCode(
           icon={numberIcon}
         />
       </div>
-      <h4 className="text12 text-center gray1">کد تایید دریافتی</h4>
+      <h4 className="text14 gray1 rightText">کد تایید دریافتی</h4>
       <div className="activationCode__form">
-        <div className="center padd15 col-12 ltr gray1">
-          <OtpInput
-            inputStyle={{
-              width: '50px',
-              height: '50px',
-              borderRadius: '12px',
-              border: 'solid 1px #c8c8c8',
-              backgroundColor: '#ffffff',
-              margin: '0 5px',
-            }}
-            focusStyle={{ outline: 'none' }}
-            onChange={otp => {
-              setOtpCode(otp);
-              if (otp.length === props.otp.otp_length) {
-                setTimeout(() => {
-                  const inputFocus = document.querySelector(
-                    '.activationCode__form .btn-success',
-                  );
-                  inputFocus.click();
-                  inputFocus.focus();
-                }, 1000);
-              }
-            }}
-            value={otpCode}
-            numInputs={5}
-            // separator={<span>-</span>}
-          />
+        <div className="center bottomP15 topP5 ltr gray1">
+          <div className="form-control center">
+            <OtpInput
+              inputStyle={{
+                width: '25px',
+                height: '35px',
+                borderBottom: 'solid 1px #c8c8c8',
+                margin: '0 5px',
+              }}
+              focusStyle={{ outline: 'none' }}
+              onChange={otp => {
+                setOtpCode(otp);
+                if (otp.length === props.otp.otp_length) {
+                  setTimeout(() => {
+                    const inputFocus = document.querySelector(
+                      '.activationCode__form .btn-success',
+                    );
+                    inputFocus.click();
+                    inputFocus.focus();
+                  }, 1000);
+                }
+              }}
+              value={otpCode}
+              numInputs={5}
+              // separator={<span>-</span>}
+            />
+          </div>
         </div>
         <div className="flex">
-          <div>
-            <Link to="/" className="color-white">
-              درخواست ارسال مجدد کد
-            </Link>
-          </div>
-          <div className="timer">
+          <div className="timer wFull">
             <Countdown date={date} renderer={renderer} key={keyss} />
           </div>
         </div>
