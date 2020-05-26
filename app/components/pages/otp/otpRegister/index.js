@@ -11,21 +11,21 @@ import './style.scss';
 
 const OtpRegister = ({
   initIschecked = false,
-  initSignUpFullname = '',
-  initSignUpUserEmail = '',
+  initSignUpFullname = 'داش علیرضا',
+  initSignUpUsername = '09358537536',
   initSignUpPass = '',
 }) => {
   // otpPermission();
   // const otp = useSelector(state => state.otp);
 
   const signUpFullname = useFormInput(initSignUpFullname);
-  const signUpUserEmail = useFormInput(initSignUpUserEmail);
+  const signUpUsername = useFormInput(initSignUpUsername);
   const signUpPass = useFormInput(initSignUpPass);
 
   const [isChecked] = useState(initIschecked);
   const { SubmitComp, onKeyPress } = signUpSubmit({
     signUpFullname,
-    signUpUserEmail,
+    signUpUsername,
     signUpPass,
   });
 
@@ -43,7 +43,7 @@ const OtpRegister = ({
       <div className="registerForm bottomP30 wFull">
         <AnimateField
           className="name"
-          placeholder="علیرضا باقری "
+          placeholder="نام خود را وارد کنید"
           name="signUpFullname"
           value={signUpFullname.value}
           type="text"
@@ -56,8 +56,8 @@ const OtpRegister = ({
         <AnimateField
           className="tel"
           placeholder="09*********"
-          name="signUpPhone"
-          value=""
+          name="signUpUsername"
+          value={signUpUsername.value}
           type="text"
           label="شماره موبایل"
           icon={numberIcon}
@@ -94,7 +94,7 @@ const OtpRegister = ({
 OtpRegister.propTypes = {
   initIschecked: PropTypes.bool,
   initSignUpFullname: PropTypes.string,
-  initSignUpUserEmail: PropTypes.string,
+  initSignUpUsername: PropTypes.string,
   initSignUpPass: PropTypes.string,
 };
 

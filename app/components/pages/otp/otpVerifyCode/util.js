@@ -36,11 +36,7 @@ export const otpMainVerify = ({ initDisabled, initDate, initOtpCode }) => {
   };
 
   const resetComp = props => (
-    <button
-      type="button"
-      className="btn-white btn"
-      onClick={() => resetCode(props)}
-    >
+    <button type="button" className="text12" onClick={() => resetCode(props)}>
       ارسال مجدد کد
     </button>
   );

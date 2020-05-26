@@ -9,8 +9,15 @@ import passwordIcon from '../../../../images/password.png';
 
 import './style.scss';
 const OtpAuthentication = () => {
-  const recipient = useFormInput('');
-  const { SubmitComp, onKeyPress } = loginSubmit(recipient, 'login');
+  const loginUsername = useFormInput('');
+  const loginPassword = useFormInput('');
+  const { SubmitComp, onKeyPress } = loginSubmit(
+    {
+      loginUsername,
+      loginPassword,
+    },
+    'login',
+  );
   return (
     <SnappAuthLayout title="ورود">
       <div className="login-form">
@@ -18,27 +25,27 @@ const OtpAuthentication = () => {
           <AnimateField
             className=" username"
             placeholder="*********09 "
-            name="recipient"
-            value={recipient.value}
+            name="loginUsername"
+            value={loginUsername.value}
             type="tel"
-            onChange={recipient.onChange}
+            onChange={loginUsername.onChange}
             label="موبایل"
             onKeyPress={onKeyPress}
             icon={numberIcon}
           />
           <AnimateField
             className=" loginPassword"
-            placeholder="********* "
-            name="password"
-            value={recipient.value}
-            type="text"
-            onChange={recipient.onChange}
+            placeholder="*********"
+            type="password"
+            name="loginPassword"
+            value={loginPassword.value}
+            onChange={loginPassword.onChange}
             label="رمز عبور"
             onKeyPress={onKeyPress}
             icon={passwordIcon}
           />
 
-          <div>
+          <div className="topP15">
             <SubmitComp />
           </div>
         </Form>

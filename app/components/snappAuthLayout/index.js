@@ -10,14 +10,14 @@ const SnappAuthLayout = props => {
   return (
     <div className="kama-theme">
       <Row>
-        <Col xl="4">
-          <div className="kamairan-form">
+        <Col xl="4" className="hCenter">
+          <div className="kamairan-form wFull">
             <img className="logo" src={logo} alt="" />
             <h1>{title}</h1>
             {children}
           </div>
         </Col>
-        <Col xl="8">
+        <Col xl="8" className="center">
           <div className="kamairan-imgform">
             <img src={image} alt="" />
           </div>
