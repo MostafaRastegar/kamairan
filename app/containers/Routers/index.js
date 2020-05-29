@@ -8,6 +8,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from '../HomePage';
 import TenderPage from '../TenderPage';
+import TenderPageDetail from '../TenderPageDetail';
+import PaymentSuccessPage from '../PaymentSuccessPage';
 import Kit from '../Kit';
 import CoursePage from '../CoursePage';
 import AuthenticationPage from '../AuthenticationPage';
@@ -31,6 +33,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/tender" component={TenderPage} />
+        <Route exact path="/tender-detail" component={TenderPageDetail} />
+        <Route exact path="/payment-success" component={PaymentSuccessPage} />
         <Route exact path="/kit" component={Kit} />
         <Route exact path="/course" component={CoursePage} />
         <Route exact path="/authentication" component={AuthenticationPage} />
