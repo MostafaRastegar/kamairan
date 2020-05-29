@@ -89,6 +89,22 @@
   color: $green-1;
 }
 
+.green-2{
+  color: $green-2;
+}
+
+.green-3{
+  color: $green-3;
+}
+
+.green-4{
+  color: $green-4;
+}
+
+.bg-green4{
+  background-color: $green-4;
+}
+
 .primary {
   color: $color-primary;
 }
@@ -250,6 +266,11 @@
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
+  }
+  &_16 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.94;
   }
   &_15 {
     font-size: 15px;
