@@ -1,0 +1,13 @@
+@import "../../../style/sass/_variable";
+.page-tender-Detail{
+  .tender-cart .cart-box {
+    height: auto;
+    border-radius: 0;
+    border:0;
+    border-bottom: 1px solid $color-border-input;
+    background-color: #ffffff;
+    .topic{
+      padding: 0 0 20px;
+    }
+  }
+}

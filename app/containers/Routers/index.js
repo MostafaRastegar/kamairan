@@ -7,6 +7,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from '../HomePage';
+import TenderPage from '../TenderPage';
+import TenderPageDetail from '../TenderPageDetail';
+import PaymentSuccessPage from '../PaymentSuccessPage';
 import Kit from '../Kit';
 import CoursePage from '../CoursePage';
 import AuthenticationPage from '../AuthenticationPage';
@@ -23,7 +26,6 @@ import ProfilePayment from '../ProfilePage/paymentPage';
 import ProfileSupport from '../ProfilePage/supportPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
-import TenderCart from '../../components/snappTenderCart';
 import ServiceList from '../../components/pages/serviceList';
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
     <SnappLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/tender" component={TenderPage} />
+        <Route exact path="/tender-detail" component={TenderPageDetail} />
+        <Route exact path="/payment-success" component={PaymentSuccessPage} />
         <Route exact path="/kit" component={Kit} />
         <Route exact path="/course" component={CoursePage} />
         <Route exact path="/authentication" component={AuthenticationPage} />
@@ -45,7 +50,6 @@ function App() {
         <Route exact path="/profile-ticket" component={ProfileTicket} />
         <Route exact path="/profile-payment" component={ProfilePayment} />
         <Route exact path="/profile-support" component={ProfileSupport} />
-        <Route exact path="/tender-cart" component={TenderCart} />
         <Route exact path="/service-list" component={ServiceList} />
         <Route component={Page404} />
       </Switch>
