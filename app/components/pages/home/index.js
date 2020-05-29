@@ -6,13 +6,13 @@ import SnappContentLayout from '../../snappContentLayout';
 import SnappNewsLayout from '../../snappNewsLayout';
 import AboutCard from '../../snappAboutCard';
 import TenderCart from '../../snappTenderCart';
-
+import './styles.scss';
 const HomePage = () => {
   const loading = false;
   return (
     <>
       {!loading ? (
-        <div className="home">
+        <div className="page-home">
           <div className="bottomP20">
             <div className="container">
               <div className="row">

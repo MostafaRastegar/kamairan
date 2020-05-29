@@ -20,72 +20,74 @@ import './style.scss';
 const Header = () => {
   const location = useSelector(state => state.router.location.pathname);
   return (
-    <header className="main-header">
-      <div className="main-header__top flex center">
-        <Container>
-          <Row className="main-header__top-inner">
-            <Col>
-              <HeaderTopMenu />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="main-header__bottom">
-        <div className="main-header__bottom-inner">
-          <HeaderBottomMenu />
-        </div>
-      </div>
-      {location === '/' && (
-        <div className="main-header__bottom-home">
+    <>
+      <header className="main-header">
+        <div className="main-header__top flex center">
           <Container>
-            <Row>
-              <div className="col-lg-12 mt-3 mb-3">
-                <div className="searchBox-title text16 bottomM15">
-                  <span className="leftP5">در بین</span>
-                  <span className="leftP5 color-green">11000000</span>
-                  <span>معاملات سایت جستجو کنید!</span>
-                </div>
-                <div className="padd15 leftP30 rightP30 bg-white border-radius-10">
-                  <SearchBox />
-                </div>
-              </div>
-              <div className="col-lg-12 mt-3 pb-3">
-                <div className="row">
-                  <div className="col-3">
-                    <HeaderCategory
-                      title="محتوای ویژه"
-                      src={catContent}
-                      link="/"
-                    />
-                  </div>
-                  <div className="col-3">
-                    <HeaderCategory
-                      title="دانلود اسناد"
-                      src={catDownload}
-                      link="/"
-                    />
-                  </div>
-                  <div className="col-3">
-                    <HeaderCategory
-                      title="آموزش آنلاین"
-                      src={catOnline}
-                      link="/"
-                    />
-                  </div>
-                  <div className="col-3">
-                    <HeaderCategory
-                      title="بروز رسانی لحظه‌ای اطلاعات"
-                      src={catUpdate}
-                      link="/"
-                    />
-                  </div>
-                </div>
-              </div>
+            <Row className="main-header__top-inner">
+              <Col>
+                <HeaderTopMenu />
+              </Col>
             </Row>
           </Container>
         </div>
-      )}
-    </header>
+        <div className="main-header__bottom">
+          <div className="main-header__bottom-inner">
+            <HeaderBottomMenu />
+          </div>
+        </div>
+        {location === '/' && (
+          <div className="main-header__bottom-home">
+            <Container>
+              <Row>
+                <div className="col-lg-12 mt-3 mb-3">
+                  <div className="searchBox-title text16 bottomM15">
+                    <span className="leftP5">در بین</span>
+                    <span className="leftP5 color-green">11000000</span>
+                    <span>معاملات سایت جستجو کنید!</span>
+                  </div>
+                  <div className="padd15 leftP30 rightP30 bg-white border-radius-10">
+                    <SearchBox />
+                  </div>
+                </div>
+                <div className="col-lg-12 mt-3 pb-3">
+                  <div className="row">
+                    <div className="col-3">
+                      <HeaderCategory
+                        title="محتوای ویژه"
+                        src={catContent}
+                        link="/"
+                      />
+                    </div>
+                    <div className="col-3">
+                      <HeaderCategory
+                        title="دانلود اسناد"
+                        src={catDownload}
+                        link="/"
+                      />
+                    </div>
+                    <div className="col-3">
+                      <HeaderCategory
+                        title="آموزش آنلاین"
+                        src={catOnline}
+                        link="/"
+                      />
+                    </div>
+                    <div className="col-3">
+                      <HeaderCategory
+                        title="بروز رسانی لحظه‌ای اطلاعات"
+                        src={catUpdate}
+                        link="/"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Row>
+            </Container>
+          </div>
+        )}
+      </header>
+    </>
   );
 };
 
