@@ -24,6 +24,7 @@ import ProfileSupport from '../ProfilePage/supportPage';
 import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
 import TenderCart from '../../components/snappTenderCart';
+import ServiceList from '../../components/pages/serviceList';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route exact path="/profile-payment" component={ProfilePayment} />
         <Route exact path="/profile-support" component={ProfileSupport} />
         <Route exact path="/tender-cart" component={TenderCart} />
+        <Route exact path="/service-list" component={ServiceList} />
         <Route component={Page404} />
       </Switch>
     </SnappLayout>
