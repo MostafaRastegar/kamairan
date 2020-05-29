@@ -21,11 +21,13 @@ const Layout = props => {
               <div className="topM20 bg-white borderAll border-radius-10">
                 <Breadcrumb />
               </div>
-              <div className="topM20 leftP25 rightP25 bg-white borderAll border-radius-10">
-                <div className="padd15 bg-white border-radius-10">
-                  <SearchBox />
+              {location !== '/payment-success' && (
+                <div className="topM20 leftP25 rightP25 bg-white borderAll border-radius-10">
+                  <div className="padd15 bg-white border-radius-10">
+                    <SearchBox />
+                  </div>
                 </div>
-              </div>
+              )}
             </Container>
           </>
         )}
