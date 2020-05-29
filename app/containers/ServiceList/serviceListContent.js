@@ -4,16 +4,11 @@ import './style.scss';
 
 const ServiceListContent = () => (
   <div className="service-list-content topP30">
-    <div style={{ height: '329px' }}>
-      <div
-        className="title rightP20 leftP30"
-        style={{
-          width: '55%',
-          float: 'right',
-        }}
-      >
+    <div>
+      <div className="title rightP20 leftP30">
         <h5 className="text20 block">چه طور به شما خدمات ارائه می کنیم </h5>
         <p className="topP20 gray7 text-p_16">
+          <img className="content-img" src={servicelist} alt="" />
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
@@ -29,15 +24,6 @@ const ServiceListContent = () => (
           سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
           کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
         </p>
-      </div>
-      <div
-        className="img"
-        style={{
-          width: '45%',
-          float: 'left',
-        }}
-      >
-        <img src={servicelist} alt="" />
       </div>
     </div>
     <div className="rightP20">

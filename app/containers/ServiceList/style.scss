@@ -1,7 +1,8 @@
 @import '../../style/sass/variable';
 .service-list{
     .service-list__card{
-        width: 281px;
+        width: 100%;
+        max-width: 281px;
         height: 514px;
         border-radius: 15px;
         &_success{
@@ -72,4 +73,9 @@
             }
         }
     }
+}
+.content-img{
+    width: 100%;
+    float: left;
+    max-width: 400px;
 }

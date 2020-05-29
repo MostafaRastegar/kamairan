@@ -8,10 +8,8 @@ const ServiceListCard = props => {
     data: { title, status },
   } = props;
   return (
-    <div className="service-list">
-      <div
-        className={`service-list__card topM30 leftM15 service-list__card_${status}`}
-      >
+    <div className="service-list leftM10 rightM10">
+      <div className={`service-list__card topM30 service-list__card_${status}`}>
         <div className="gray8">
           <span className="text18 center topP20">{title}</span>
           <div
