@@ -1,81 +1,83 @@
 @import '../../style/sass/variable';
-.service-list{
-    .service-list__card{
-        width: 100%;
-        max-width: 281px;
-        height: 514px;
-        border-radius: 15px;
-        &_success{
-            border: 1px solid $color-success;
-        }
-        &_danger{
-            border: 1px solid $color-danger;
-        }
-        &_info{
-            border: 1px solid $color-info;
-        }
-        &_warning{
-            border: 1px solid $color-warning;
-        }
-        .card__line{
-            width: 45px;
-            height: 3px;
-            border-radius: 0.9px;
-            margin-left: auto;
-            margin-right: auto;
-            &_success{
-                border: solid 1.8px $color-success;
-                background-color: $color-success;
-            }
-            &_danger{
-                border: solid 1.8px $color-danger;
-                background-color: $color-danger;
-            }
-            &_info{
-                border: solid 1.8px $color-info;
-                background-color: $color-info;
-            }
-            &_warning{
-                border: solid 1.8px $color-warning;
-                background-color: $color-warning;
-            }
-        }
-        .service-list__card-d{
-            width: 232px;
-            height: 79px;
-            background-color: #e9eaef;
-            border-radius: 10px;
-        }
-        .service-list__card-down{
-            height: 165px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            &_success{
-                border-top: solid 1.8px $color-success;
-                background-color: #d7f1da;
-            }
-            &_danger{
-                border-top: solid 1.8px $color-danger;
-                background-color: #f3d6da;
-            }
-            &_info{
-                border-top: solid 1.8px $color-info;
-                background-color: #d7e7f1;
-            }
-            &_warning{
-                border-top: solid 1.8px $color-warning;
-                background-color: #f1ecd7;
-            }
-            .card-down__btn{
-                button{
-                    width: 240px;
-                }
-            }
-        }
-    }
-}
-.content-img{
+.service-list {
+  flex: 0 0 22%;
+  margin: 0 1%;
+  .service-list__card {
     width: 100%;
-    float: left;
-    max-width: 400px;
+    height: 514px;
+    border-radius: 15px;
+    overflow: hidden;
+    &_success {
+      border: 1px solid $color-success;
+    }
+    &_danger {
+      border: 1px solid $color-danger;
+    }
+    &_info {
+      border: 1px solid $color-info;
+    }
+    &_warning {
+      border: 1px solid $color-warning;
+    }
+    .card__line {
+      width: 45px;
+      height: 3px;
+      border-radius: 0.9px;
+      margin-left: auto;
+      margin-right: auto;
+      &_success {
+        border: solid 1.8px $color-success;
+        background-color: $color-success;
+      }
+      &_danger {
+        border: solid 1.8px $color-danger;
+        background-color: $color-danger;
+      }
+      &_info {
+        border: solid 1.8px $color-info;
+        background-color: $color-info;
+      }
+      &_warning {
+        border: solid 1.8px $color-warning;
+        background-color: $color-warning;
+      }
+    }
+    .service-list__card-d {
+      width: 232px;
+      height: 79px;
+      background-color: #e9eaef;
+      border-radius: 10px;
+    }
+    .service-list__card-down {
+      height: 165px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      &_success {
+        border-top: solid 1.8px $color-success;
+        background-color: #d7f1da;
+      }
+      &_danger {
+        border-top: solid 1.8px $color-danger;
+        background-color: #f3d6da;
+      }
+      &_info {
+        border-top: solid 1.8px $color-info;
+        background-color: #d7e7f1;
+      }
+      &_warning {
+        border-top: solid 1.8px $color-warning;
+        background-color: #f1ecd7;
+      }
+      .card-down__btn {
+        button {
+          width: 240px;
+        }
+      }
+    }
+  }
+}
+.content-img {
+  width: 100%;
+  float: left;
+  max-width: 400px;
 }
