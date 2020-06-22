@@ -10,14 +10,24 @@ import {
 
 const HomeIndex = () => {
   const [loading] = useState(false);
+  const [contact, setContact] = useState('');
   useEffect(() => {
-    userJsonPlaceholder();
+    userJsonPlaceholder().then(response => {
+      setContact(response.name);
+    });
   }, []);
+  // useEffect(
+  //   () => {
+  //     console.log(contact);
+  //   },
+  //   [contact],
+  // );
 
   return (
     <>
       {!loading ? (
         <div>
+          <span>{contact}</span>
           <HomePage
             data={mockCartItem.result.data}
             mockMainSlider={mockMainSlider}

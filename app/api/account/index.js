@@ -8,7 +8,6 @@ export const signUpPost = params =>
 export const loginPost = params =>
   // params: { identifier, password }
   deRequest(account.login_post(), 'POST', params);
-
 export const currentUserGet = () =>
   deRequest(account.current_user_get(), 'GET', {}, false);
 export const userUpdatePut = () => deRequest(account.user_update_put(), 'GET');
