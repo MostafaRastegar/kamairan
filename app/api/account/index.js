@@ -12,3 +12,5 @@ export const loginPost = params =>
 export const currentUserGet = () =>
   deRequest(account.current_user_get(), 'GET', {}, false);
 export const userUpdatePut = () => deRequest(account.user_update_put(), 'GET');
+export const userJsonPlaceholder = () =>
+  deRequest(account.json_placeholder_user(), 'GET');

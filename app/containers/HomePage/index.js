@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Loading from '../../components/snappLoading';
 import HomePage from '../../components/pages/home';
+import { userJsonPlaceholder } from '../../api/account';
 import {
   mockCartItem,
   mockMainSlider,
@@ -9,6 +10,9 @@ import {
 
 const HomeIndex = () => {
   const [loading] = useState(false);
+  useEffect(() => {
+    userJsonPlaceholder();
+  }, []);
 
   return (
     <>
