@@ -16,6 +16,7 @@ import AboutCard from '../../snappAboutCard';
 import NewsCard from '../../snappNewsCard';
 import SearchBox from '../../snappSearchBox';
 import HeaderCategory from '../../snappHeaderCategory';
+import Search from '../search-op';
 import catContent from '../../../images/icons/category-content.png';
 import Icon from './icon';
 import ChiliAlert from '../../snappAlert';
@@ -436,6 +437,7 @@ export class Kit extends React.Component {
                 ثبت
               </button>
             </div>
+            <Search />
           </div>
         </div>
       </div>
