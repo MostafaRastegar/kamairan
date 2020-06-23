@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Nav,
   NavItem,
@@ -10,7 +10,6 @@ import {
   NavLink,
 } from 'reactstrap';
 // import messages from './messages';
-import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import support from '../../images/support.png';
 const HeaderBottomMenu = () => {
@@ -19,12 +18,14 @@ const HeaderBottomMenu = () => {
   return (
     <div className="container main-header__bottom">
       <div className="row hFull center">
-        <div className="col-2">
+        <div className="col-3">
           <div className="main-header__bottom-logo">
-            <img className="logo" src={logo} alt="logo" />
+            <Link to="/">
+              <img className="logo" src={logo} alt="logo" />
+            </Link>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-5">
           <div className="main-header__bottom-menu leftMauto">
             <Nav>
               <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>

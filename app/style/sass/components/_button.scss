@@ -1,7 +1,7 @@
 .btn{
-  border-radius: 10px;
+  border-radius: 9px;
   padding: 5px 22px;
-  height: 41px;
+  height: 40px;
   line-height: 28px;
   font-size: 14px;
   &-primary{
@@ -53,7 +53,7 @@
     }
   }
 }
-button {
+button, .btn {
   &:active,&:focus {
     outline: none !important;
     box-shadow:none !important
