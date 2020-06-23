@@ -1,0 +1,105 @@
+@import '../../../style/sass/variable';
+.invoice-top img {
+  width: 57px;
+  height: 57px;
+  margin-left: 10px;
+}
+.mrauto {
+  margin-right: auto;
+}
+.takhfif-box {
+  border-radius: 8.9px;
+  border: solid 0.9px #f1c40f;
+  background-color: #fbfae2;
+}
+.takhfif-form button {
+  position: absolute;
+  bottom: 39px;
+  left: 148px;
+}
+.takhfif-form input {
+  text-align: left;
+  width: 100%;
+}
+table tr:first-child td,
+table tr:first-child th {
+  border-top: 0 !important;
+}
+.factor table tr:last-child td {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.tbl table thead th {
+  border-bottom: 0 !important;
+}
+.sms_price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27ae60;
+  padding-top: 17px;
+}
+.sms_title {
+  flex: 0 0 50%;
+}
+.factor-takhfif-price {
+  color: $red-4;
+}
+.factor button {
+  width: 100%;
+}
+.filters__checkbox {
+  margin-right: auto;
+  vertical-align: middle;
+  margin-left: 50px;
+  padding-bottom: 12px;
+  input {
+    display: none;
+  }
+  label {
+    position: relative;
+    width: 54px;
+    right: 28px;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      border-radius: 18px;
+      border: 1px solid #bdc3c7;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    &::before {
+      width: 54px;
+      height: 28px;
+      border: 1px solid #bdc3c7;
+      background-color: #ecf0f1;
+      //border-color: $tertiary;
+    }
+    &::after {
+      content: '';
+      width: 23px;
+      height: 24px;
+      background: #bdc3c7;
+      border: 0;
+      top: 2px;
+      left: 3px;
+    }
+  }
+  input:checked + label::after {
+    left: 50%;
+    background: #27ae60;
+  }
+  input:checked + label::before {
+    background: #ecf0f1;
+  }
+  &::after {
+    content: attr(data-label);
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+  input:required {
+    background: #000;
+  }
+}
