@@ -8,19 +8,10 @@ import image from '../../images/logintheme.png';
 
 const SnappAuthLayout = props => {
   const { title, children } = props;
-
   useEffect(() => {
-    const bodyColor = color => {
-      document.querySelector('body').style.backgroundColor = color;
-    };
-    document.querySelector('.main-header').style.display = 'none';
-    document.querySelector('.main-footer').style.display = 'none';
-    document.querySelector('.page-home-less').style.display = 'none';
-    bodyColor('red');
+    document.querySelector('body').classList.add('auth-bg');
     return () => {
-      document.querySelector('body').style.backgroundColor = 'transparent';
-      document.querySelector('.main-header').style.display = 'block';
-      document.querySelector('.main-footer').style.display = 'block';
+      document.querySelector('body').classList.remove('auth-bg');
     };
   }, []);
   return (
@@ -32,20 +23,22 @@ const SnappAuthLayout = props => {
             <span>{`>`}</span>
           </Link>
         </div>
-        <Row>
-          <Col xl="4" className="hCenter">
-            <div className="kamairan-form wFull">
-              <img className="logo" src={logo} alt="" />
-              <h1>{title}</h1>
-              {children}
-            </div>
-          </Col>
-          <Col xl="8" className="center">
-            <div className="kamairan-imgform">
-              <img src={image} alt="" />
-            </div>
-          </Col>
-        </Row>
+        <div className="kama-theme-main">
+          <Row>
+            <Col xl="4" className="hCenter">
+              <div className="kamairan-form wFull">
+                <img className="logo" src={logo} alt="" />
+                <h1>{title}</h1>
+                {children}
+              </div>
+            </Col>
+            <Col xl="8" className="center">
+              <div className="kamairan-imgform">
+                <img src={image} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </div>
       </div>
     </Container>
   );

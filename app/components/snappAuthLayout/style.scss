@@ -1,3 +1,12 @@
+.auth-bg {
+  background: #333840 url(../../images/bak-header.png) no-repeat 0 0;
+  background-size: cover;
+  .main-footer,
+  .main-header,
+  .page-home-less {
+    display: none;
+  }
+}
 .kamairan-form h1 {
   font-size: 30px;
   font-weight: bold;
@@ -8,14 +17,17 @@
   border-radius: 10px;
   border: solid 1px #dfe4ea;
   background-color: #ffffff;
-  padding: 30px 90px;
+  padding: 30px 30px;
   text-align: center;
   margin: 30px 0;
-  .kamairan-imgform img{
-    width:600px;
+  .kamairan-imgform img {
+    width: 600px;
+  }
+  &-main {
+    padding: 0 60px;
   }
 }
-.snapp-icon{
+.snapp-icon {
   position: absolute;
   bottom: 13px;
   left: 12px;
@@ -28,12 +40,12 @@
 }
 .form-bottom {
   text-align: center;
-  margin-top:28px;
+  margin-top: 28px;
 
-.a {
-  color: #fff;
-}
- .orange {
-  color: #e67e22;
-}
+  .a {
+    color: #fff;
+  }
+  .orange {
+    color: #e67e22;
+  }
 }
