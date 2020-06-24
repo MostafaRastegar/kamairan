@@ -5,6 +5,7 @@
   color: white;
   background-image: url('../../images/bak-header.png');
   background-repeat: no-repeat;
+  background-size: cover;
   .nav-link {
     color: white;
   }
@@ -22,6 +23,10 @@
     &-logo {
       display: flex;
       justify-content: flex-end;
+      img{
+        width: 100%;
+        max-width: 200px;
+      }
       > * {
         margin-right: 12px;
         cursor: pointer;
@@ -37,7 +42,7 @@
       }
     }
     &-menu {
-      font-size: 12px;
+      font-size: 16px;
     }
     &-home {
       max-width: 979px;
@@ -47,7 +52,7 @@
   }
   &__top {
     height: 40px;
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed $color-border-input;
     &-inner {
       align-items: center;
       justify-items: center;
@@ -74,7 +79,7 @@
       margin-right:10px;
     }
   }
-  .btn-danger {
-    background-image: linear-gradient(to top, $red-4, #ed4054);
-  }
+  // .btn-danger {
+  //   background-image: linear-gradient(to top, $red-4, #ed4054);
+  // }
 }

@@ -24,7 +24,7 @@ const HeaderTopMenu = () => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div className="main-header__top flex">
+    <div className="main-header__top-inner flex">
       <div className="main-header__top-menu leftMauto">
         <Nav>
           <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
