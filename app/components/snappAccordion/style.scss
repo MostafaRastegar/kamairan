@@ -1,0 +1,44 @@
+.acckama {
+  .accordion__button {
+    text-align: right;
+    background-color: white;
+    border-bottom: 1px solid #d5dbde;
+    padding:0;
+    &:before {
+      transform: rotate(135deg);
+      position: absolute;
+      left: 0;
+      margin-left: 30px;
+      margin-top:32px;
+    }
+    &[aria-expanded='false'] {
+      border-bottom: 0;
+    }
+    &[aria-expanded='true']::before,
+    &[aria-selected='true']::before {
+      transform: rotate(403deg);
+    }
+    &:hover {
+      background-color: white;
+    }
+
+    .accimg {
+      border-left: 1px solid #d5dbde;
+    }
+  }
+
+  .accordion__heading-inner > div {
+    padding: 18px;
+  }
+  .accimg_panel {
+    width: 32px;
+    height: 22px;
+    margin-left: 5px;
+  }
+  .accpanel_body ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+    color: #3d3d3d;
+  }
+}

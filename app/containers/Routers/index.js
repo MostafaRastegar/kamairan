@@ -28,7 +28,7 @@ import Page404 from '../Page404';
 import SnappLayout from '../../components/snappLayout';
 import ServiceList from '../../components/pages/serviceList';
 import Invoice from '../Invoice';
-
+import Group from '../GroupPage';
 function App() {
   return (
     <SnappLayout>
@@ -53,6 +53,7 @@ function App() {
         <Route exact path="/profile-support" component={ProfileSupport} />
         <Route exact path="/service-list" component={ServiceList} />
         <Route exact path="/invoice" component={Invoice} />
+        <Route exact path="/Group" component={Group} />
         <Route component={Page404} />
       </Switch>
     </SnappLayout>

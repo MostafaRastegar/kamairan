@@ -92,7 +92,7 @@ export class Kit extends React.Component {
       </div>
     ));
     return (
-      <div className="container bg-white">
+      <div className="container">
         <div className="row topP15">
           <hr />
           <div className="col-lg-12 mt-3 mb-3">
